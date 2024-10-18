@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="es">
 <head>
     <meta charset="UTF-8">
@@ -10,11 +11,21 @@
         <h1>Ubicación</h1>
     </header>
 
+    <nav>
+        <button onclick="window.location.href='index.html';">Inicio</button>
+        <button onclick="window.location.href='contacto.html';">Contacto</button>
+    </nav>
+
     <main>
         <section>
-            <h2>Nuestra Ubicación</h2>
-            <p>Haz clic en el botón para ver nuestra ubicación en el mapa:</p>
-            <button onclick="window.open('https://www.google.com/maps?q=tu+direccion+aqui', '_blank');">Ver en Google Maps</button>
+            <h2>Encuéntranos aquí:</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345096944!2d144.95373531531654!3d-37.816279979751226!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11d8ab%3A0x5045675218ceed30!2sMelbourne%20Australia!5e0!3m2!1sen!2sus!4v1633692236780!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy"></iframe>
         </section>
     </main>
 
