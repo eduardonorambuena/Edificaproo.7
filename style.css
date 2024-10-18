@@ -15,11 +15,21 @@ header {
 }
 
 /* Estilo para el logo */
-#logo {
-    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
-    height: auto; /* Mantiene la proporción */
-    margin-right: 20px; /* Espacio entre el logo y el título */
+.logo {
+    width: 150px; /* Ancho inicial del logo */
+    transition: transform 0.3s ease; /* Transición suave para la transformación */
 }
+
+/* Efecto al pasar el mouse */
+.logo:hover {
+    transform: scale(1.1); /* Aumenta el tamaño del logo al 110% */
+}
+
+/* Efecto al hacer clic */
+.logo:active {
+    transform: scale(0.9); /* Reduce el tamaño del logo al 90% al hacer clic */
+}
+
 
 /* Estilo para el título */
 header h1 {
