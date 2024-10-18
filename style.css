@@ -113,6 +113,6 @@ footer p {
     padding: 20px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
     margin: 20px 0; /* Margen superior e inferior */
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    box-shadow: 0 2px 10px #069af6; /* Sombra sutil */
 }
 
