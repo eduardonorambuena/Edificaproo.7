@@ -109,10 +109,10 @@ footer p {
 }
 /* Estilo para el contenedor de servicios */
 #servicios {
-    background-color: #07e1fe; /* Color celeste claro */
+    background-color: #070808; /* Color celeste claro */
     padding: 20px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
     margin: 20px 0; /* Margen superior e inferior */
-    box-shadow: 0 2px 10px #069af6; /* Sombra sutil */
+    box-shadow: 0 2px 10px #b8d8ec; /* Sombra sutil */
 }
 
