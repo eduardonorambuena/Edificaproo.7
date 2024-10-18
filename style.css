@@ -107,12 +107,5 @@ footer p {
         flex: 1 1 calc(100% - 20px); /* Toma el 100% del ancho disponible en pantallas pequeñas */
     }
 }
-/* Estilo para el contenedor de servicios */
-#servicios {
-    background-color: #070808; /* Color celeste claro */
-    padding: 20px; /* Espaciado interno */
-    border-radius: 5px; /* Bordes redondeados */
-    margin: 20px 0; /* Margen superior e inferior */
-    box-shadow: 0 2px 10px #b8d8ec; /* Sombra sutil */
-}
+
 
