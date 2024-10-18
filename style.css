@@ -33,22 +33,24 @@ nav {
     margin: 20px; /* Margen para los botones de navegación */
 }
 
-/* Estilo para los botones */
-nav button {
-    background-color: #007BFF; /* Color de fondo */
+/* Estilo para los botones de contacto */
+.contact-button {
+    background-color: #00bcd4; /* Color de fondo */
     color: white; /* Color del texto */
+    padding: 15px 30px; /* Espaciado interno */
     border: none; /* Sin borde */
-    padding: 10px 15px; /* Espaciado */
-    margin: 5px; /* Espaciado entre botones */
     border-radius: 5px; /* Bordes redondeados */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    transition: background-color 0.3s; /* Animación para el color de fondo */
     font-size: 16px; /* Tamaño de fuente */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Transición suave al cambiar de color */
+    margin: 10px 0; /* Margen superior e inferior */
 }
 
-nav button:hover {
-    background-color: #0056b3; /* Color de fondo al pasar el mouse */
+/* Efecto al pasar el mouse */
+.contact-button:hover {
+    background-color: #008c9e; /* Color más oscuro al pasar el mouse */
 }
+
 
 /* Estilo para el contenido principal */
 main {
@@ -63,8 +65,8 @@ main {
 }
 
 .servicio {
-    background-color: #09acfd; /* Color de fondo del servicio */
-    border: 1px solid #ccc; /* Borde sutil */
+    background-color: hsl(216, 98%, 51%); /* Color de fondo del servicio */
+    border: 1px solid #ffffff; /* Borde sutil */
     border-radius: 5px; /* Bordes redondeados */
     padding: 15px; /* Espaciado interno */
     flex: 1 1 calc(30% - 20px); /* Toma el 30% del ancho disponible, menos margen */
