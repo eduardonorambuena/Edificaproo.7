@@ -8,6 +8,7 @@ body {
 header {
     display: flex; /* Usamos flexbox para alinear elementos */
     align-items: center; /* Centra verticalmente */
+    justify-content: flex-start; /* Alinea todos los elementos a la izquierda */
     background-color: #f8f8f8; /* Color de fondo del encabezado */
     padding: 10px 20px; /* Espaciado del encabezado */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
