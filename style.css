@@ -80,7 +80,7 @@ main {
 
 /* Estilo para el pie de página */
 footer {
-    background-color: #f8f8f8; /* Color de fondo del pie de página */
+    background-color: hsl(0, 0%, 31%); /* Color de fondo del pie de página */
     text-align: center; /* Centra el texto */
     padding: 10px; /* Espaciado */
     position: relative;
