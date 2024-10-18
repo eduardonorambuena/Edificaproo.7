@@ -63,7 +63,7 @@ main {
 }
 
 .servicio {
-    background-color: #f0f0f0; /* Color de fondo del servicio */
+    background-color: #09acfd; /* Color de fondo del servicio */
     border: 1px solid #ccc; /* Borde sutil */
     border-radius: 5px; /* Bordes redondeados */
     padding: 15px; /* Espaciado interno */
@@ -109,7 +109,7 @@ footer p {
 }
 /* Estilo para el contenedor de servicios */
 #servicios {
-    background-color: #e0f7fa; /* Color celeste claro */
+    background-color: #07e1fe; /* Color celeste claro */
     padding: 20px; /* Espaciado interno */
     border-radius: 5px; /* Bordes redondeados */
     margin: 20px 0; /* Margen superior e inferior */
