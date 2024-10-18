@@ -9,7 +9,7 @@ header {
     display: flex; /* Usamos flexbox para alinear elementos */
     align-items: center; /* Centra verticalmente */
     justify-content: flex-start; /* Alinea todos los elementos a la izquierda */
-    background-color: #f8f8f8; /* Color de fondo del encabezado */
+    background-color: hsl(225, 94%, 51%); /* Color de fondo del encabezado */
     padding: 10px 20px; /* Espaciado del encabezado */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
@@ -66,7 +66,7 @@ main {
 
 .servicio {
     background-color: hsl(216, 98%, 51%); /* Color de fondo del servicio */
-    border: 1px solid #ffffff; /* Borde sutil */
+    border: 1px solid hwb(0 20% 79%); /* Borde sutil */
     border-radius: 5px; /* Bordes redondeados */
     padding: 15px; /* Espaciado interno */
     flex: 1 1 calc(30% - 20px); /* Toma el 30% del ancho disponible, menos margen */
