@@ -1,95 +1,108 @@
-/* Reseteo básico */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
+/* Reset general para el cuerpo */
 body {
-    font-family: 'Arial', sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
+    margin: 0;
+    font-family: Arial, sans-serif;
 }
 
+/* Estilo para el encabezado */
 header {
-    background: #007bff;
-    color: white;
-    padding: 20px 0;
-    text-align: center;
+    display: flex; /* Usamos flexbox para alinear elementos */
+    align-items: center; /* Centra verticalmente */
+    background-color: #f8f8f8; /* Color de fondo del encabezado */
+    padding: 10px 20px; /* Espaciado del encabezado */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
 
-header img {
-    max-width: 150px;
+/* Estilo para el logo */
+#logo {
+    width: 50px; /* Ajusta el tamaño del logo según sea necesario */
+    height: auto; /* Mantiene la proporción */
+    margin-right: 20px; /* Espacio entre el logo y el título */
 }
 
+/* Estilo para el título */
+header h1 {
+    font-size: 24px; /* Tamaño de fuente */
+    color: #333; /* Color del texto */
+    margin: 0; /* Sin margen */
+}
+
+/* Estilo para la navegación */
 nav {
-    display: flex;
-    justify-content: center;
-    margin: 20px 0;
+    margin: 20px; /* Margen para los botones de navegación */
 }
 
+/* Estilo para los botones */
 nav button {
-    background: linear-gradient(135deg, #6e8efb, #a77bfa);
-    color: white;
-    border: none;
-    padding: 12px 24px;
-    margin: 0 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    font-size: 16px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #007BFF; /* Color de fondo */
+    color: white; /* Color del texto */
+    border: none; /* Sin borde */
+    padding: 10px 15px; /* Espaciado */
+    margin: 5px; /* Espaciado entre botones */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    transition: background-color 0.3s; /* Animación para el color de fondo */
+    font-size: 16px; /* Tamaño de fuente */
 }
 
 nav button:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    background-color: #0056b3; /* Color de fondo al pasar el mouse */
 }
 
+/* Estilo para el contenido principal */
 main {
-    padding: 20px;
+    padding: 20px; /* Espaciado del contenido principal */
 }
 
+/* Estilo para las secciones de servicios */
 #servicios {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    display: flex; /* Usamos flexbox para los servicios */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    gap: 20px; /* Espaciado entre elementos */
 }
 
 .servicio {
-    background: white;
-    border-radius: 8px;
-    padding: 20px;
-    margin: 10px;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    flex: 1 0 30%;
+    background-color: #f0f0f0; /* Color de fondo del servicio */
+    border: 1px solid #ccc; /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    flex: 1 1 calc(30% - 20px); /* Toma el 30% del ancho disponible, menos margen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s; /* Animación de transformación */
 }
 
+.servicio:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+}
+
+/* Estilo para el pie de página */
 footer {
-    text-align: center;
-    padding: 10px 0;
-    background: #007bff;
-    color: white;
+    background-color: #f8f8f8; /* Color de fondo del pie de página */
+    text-align: center; /* Centra el texto */
+    padding: 10px; /* Espaciado */
     position: relative;
-    bottom: 0;
-    width: 100%;
+    bottom: 0; /* Fija en la parte inferior */
+    width: 100%; /* Ancho completo */
 }
 
-/* Estilo para el chatbot */
-#chatbot {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #007bff;
-    color: white;
-    padding: 10px 15px;
-    border-radius: 50px;
-    cursor: pointer;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background 0.3s ease;
+/* Estilo para el pie de página */
+footer p {
+    margin: 0; /* Sin margen */
+    color: #666; /* Color del texto */
 }
 
-#chatbot:hover {
-    background: #0056b3;
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    #logo {
+        width: 40px; /* Ajustar el tamaño en pantallas pequeñas */
+    }
+
+    nav button {
+        padding: 8px 12px; /* Ajustar el espaciado de los botones */
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+
+    .servicio {
+        flex: 1 1 calc(100% - 20px); /* Toma el 100% del ancho disponible en pantallas pequeñas */
+    }
 }
