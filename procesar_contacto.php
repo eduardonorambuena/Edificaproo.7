@@ -8,7 +8,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     $envio = htmlspecialchars($_POST['envio']);
 
     // Configura tu dirección de correo aquí
-    $destinatario = "info@edificapro7.cl"; // Cambia esto a tu correo electrónico
+    $destinatario = "edificapro7@gmail.com"; // Cambia esto a tu correo electrónico
 
     if ($envio == "correo") {
         $asunto = "Nuevo contacto de $nombre";
@@ -22,7 +22,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         }
     } elseif ($envio == "whatsapp") {
         $mensajeWhatsapp = urlencode("Nombre: $nombre\nCorreo: $email\nTeléfono: $telefono\nServicio: $servicio\nMensaje: $mensaje");
-        $numeroWhatsapp = "56912345678"; // Cambia esto a tu número de WhatsApp
+        $numeroWhatsapp = "56930077799"; // Cambia esto a tu número de WhatsApp
         header("Location: https://wa.me/$numeroWhatsapp?text=$mensajeWhatsapp");
         exit();
     }
