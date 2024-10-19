@@ -17,7 +17,7 @@ header {
 
 /* Estilo para la sección ¿Quiénes somos? */
 #quienes-somos {
-    background-color: hwb(0 100% 0%); /* Fondo celeste claro */
+    background-color: hwb(203 10% 0%); /* Fondo celeste claro */
     padding: 20px;
     border-radius: 10px;
     margin: 0; /* Eliminar margen */
