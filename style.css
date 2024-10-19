@@ -1,7 +1,7 @@
 /* Reset general para el cuerpo */
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
+    font-family: 'Arial', sans-serif;
 }
 
 /* Estilo para el fondo de la página */
@@ -10,7 +10,7 @@ body {
     background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
     background-position: center; /* Centra la imagen */
     background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: black; /* Cambia el color del texto a negro para mayor contraste */
+    color: white; /* Cambia el color del texto a blanco para mayor contraste */
 }
 
 /* Estilos para computadoras */
@@ -32,9 +32,19 @@ header {
     display: flex; /* Usamos flexbox para alinear elementos */
     align-items: center; /* Centra verticalmente */
     justify-content: flex-start; /* Alinea todos los elementos a la izquierda */
-    background-color: white; /* Color de fondo blanco */
+    background-color: white; /* Color de fondo del encabezado */
     padding: 10px 20px; /* Espaciado del encabezado */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Estilo para el ícono del menú */
+#menu-icon {
+    background-color: transparent; /* Fondo transparente */
+    border: none; /* Sin borde */
+    color: black; /* Color negro para el ícono */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+    font-size: 24px; /* Tamaño del ícono */
+    margin-right: 20px; /* Espacio a la derecha del ícono */
 }
 
 /* Estilo para el logo */
@@ -56,9 +66,8 @@ header {
 /* Estilo para el título */
 header h1 {
     font-size: 24px; /* Tamaño de fuente */
-    color: #333; /* Color del texto */
+    color: black; /* Color del texto negro */
     margin: 0; /* Sin margen */
-    margin-left: 20px; /* Espacio entre el logo y el título */
 }
 
 /* Estilo para la navegación */
@@ -69,7 +78,7 @@ nav {
 /* Estilo para los botones de contacto */
 .contact-button {
     background-color: #00bcd4; /* Color de fondo */
-    color: black; /* Color del texto en negro */
+    color: white; /* Color del texto */
     padding: 15px 30px; /* Espaciado interno */
     border: none; /* Sin borde */
     border-radius: 5px; /* Bordes redondeados */
@@ -96,6 +105,16 @@ main {
     gap: 20px; /* Espaciado entre elementos */
 }
 
+/* Sección ¿Quiénes somos? */
+#quienes-somos {
+    background-color: hsl(248, 98%, 48%); /* Fondo celeste claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
+
+/* Estilo para los servicios */
 .servicio {
     background-color: hsl(216, 98%, 51%); /* Color de fondo del servicio */
     border: 1px solid hwb(0 20% 79%); /* Borde sutil */
@@ -104,7 +123,6 @@ main {
     flex: 1 1 calc(30% - 20px); /* Toma el 30% del ancho disponible, menos margen */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
     transition: transform 0.3s; /* Animación de transformación */
-    color: black; /* Color de texto en negro */
 }
 
 .servicio:hover {
@@ -124,12 +142,12 @@ footer {
 /* Estilo para el pie de página */
 footer p {
     margin: 0; /* Sin margen */
-    color: black; /* Color del texto en negro */
+    color: rgb(255, 255, 255); /* Color del texto blanco */
 }
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 600px) {
-    .logo {
+    #logo {
         width: 40px; /* Ajustar el tamaño en pantallas pequeñas */
     }
 
@@ -141,42 +159,4 @@ footer p {
     .servicio {
         flex: 1 1 calc(100% - 20px); /* Toma el 100% del ancho disponible en pantallas pequeñas */
     }
-}
-
-/* Estilo del menú lateral */
-#sidebar {
-    position: fixed; /* Mantener el menú en la misma posición */
-    right: 0;
-    top: 60px; /* Justo debajo del header */
-    width: 200px;
-    background-color: #f0f8ff; /* Fondo celeste claro */
-    padding: 15px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    display: none; /* Inicialmente oculto */
-}
-
-/* Efecto hover en el botón del menú */
-#sidebar button {
-    background-color: #007BFF; /* Color del botón */
-    color: black; /* Color del texto en negro */
-    border: none;
-    padding: 10px;
-    margin: 5px 0;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s; /* Transición suave */
-}
-
-#sidebar button:hover {
-    background-color: #0056b3; /* Color al pasar el mouse */
-}
-
-/* Sección ¿Quiénes somos? */
-#quienes-somos {
-    background-color: hsl(248, 98%, 48%); /* Fondo celeste claro */
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    color: black; /* Color de texto en negro */
 }
