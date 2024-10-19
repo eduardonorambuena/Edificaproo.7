@@ -10,7 +10,7 @@
     <header>
         <img src="logo.jpg" alt="Logo" class="logo">
         <h1>Edificapro7</h1>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Ícono del menú -->
     </header>
 
     <nav>
@@ -21,10 +21,6 @@
     <main>
         <section id="contacto">
             <h2>Contacto</h2>
-            <div class="info-contacto">
-                <a class="btn-contacto" href="mailto:edificapro7@gmail.com">Correo Electrónico</a>
-                <a class="btn-contacto" href="https://wa.me/+56930077799" target="_blank">WhatsApp</a>
-            </div>
             <form action="procesar_contacto.php" method="POST">
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -46,15 +42,20 @@
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
 
-                <label for="envio">Enviar a:</label>
-                <select id="envio" name="envio">
-                    <option value="correo">Correo Electrónico</option>
+                <label>¿Cómo deseas recibir la respuesta?</label>
+                <select id="contacto-preferencia" name="contacto-preferencia">
                     <option value="whatsapp">WhatsApp</option>
+                    <option value="correo">Correo Electrónico</option>
                 </select>
 
                 <button type="submit">Enviar</button>
             </form>
         </section>
+
+        <div class="contact-info">
+            <a href="https://api.whatsapp.com/send?phone=56930077799" target="_blank" class="whatsapp-button">WhatsApp</a>
+            <a href="mailto:edificapro7@gmail.com" class="email-button">Enviar Correo</a>
+        </div>
     </main>
 
     <footer>

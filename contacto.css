@@ -1,60 +1,13 @@
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f9f9; /* Fondo claro */
-    margin: 0;
-    padding: 0;
-}
-
-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-color: white;
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-}
-
-.logo {
-    max-width: 100px; /* Tamaño ajustado del logo */
-}
-
-.menu-icon {
-    font-size: 24px;
-    color: black;
-    cursor: pointer;
-}
-
-/* Estilo para el formulario de contacto */
-#contacto {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px;
-    background-color: #fff; /* Fondo blanco para el contacto */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto; /* Centrando el contacto */
-}
-
-.info-contacto {
-    margin-bottom: 20px;
-    text-align: center; /* Centrando el texto */
-}
-
-.info-contacto a {
-    color: #4CAF50; /* Color para los enlaces */
-    text-decoration: none; /* Sin subrayado */
-}
-
-.info-contacto a:hover {
-    text-decoration: underline; /* Subrayado al pasar el mouse */
-}
-
+/* Estilo general para el formulario */
 #contacto form {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4; /* Fondo gris claro */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
 #contacto label {
@@ -62,12 +15,14 @@ header {
     font-weight: bold;
 }
 
-#contacto input, #contacto select, #contacto textarea {
+#contacto input,
+#contacto select,
+#contacto textarea {
     margin-bottom: 15px;
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 100%;
+    width: 100%; /* Ancho completo */
 }
 
 #contacto button {
@@ -84,14 +39,33 @@ header {
     background-color: #45a049;
 }
 
-/* Estilo del menú lateral */
-#sidebar {
-    position: fixed;
-    right: 0;
-    top: 60px; /* Justo debajo del header */
-    width: 200px;
-    background-color: #0f1010; /* Fondo del menú */
-    padding: 15px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
-    display: none; /* Inicialmente oculto */
+/* Estilo para los botones de contacto */
+.contact-info {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.whatsapp-button,
+.email-button {
+    display: inline-block;
+    padding: 10px 15px;
+    margin: 0 10px;
+    background-color: #25D366; /* Color de WhatsApp */
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+    background-color: #128C7E;
+}
+
+.email-button {
+    background-color: #007BFF; /* Color de correo */
+}
+
+.email-button:hover {
+    background-color: #0056b3;
 }
