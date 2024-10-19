@@ -5,27 +5,31 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Edificapro7 - Página de Inicio</title>
     <link rel="stylesheet" href="style.css">
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
+        }
+
+        function toggleQuienesSomos() {
+            const content = document.getElementById('quienes-somos');
+            content.style.display = content.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
 </head>
 <body>
     <header>
         <img src="logo.jpg" alt="Logo" class="logo">
         <h1>Edificapro7</h1>
-        <div id="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícono de menú -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Ícono del menú -->
     </header>
 
-    <aside id="sidebar">
-        <h3>Menú</h3>
-        <button onclick="mostrarQuienesSomos()">¿Quiénes Somos?</button>
-        <button onclick="closeMenu()">Cerrar</button>
-    </aside>
+    <nav>
+        <button onclick="window.location.href='contacto.html';">Contacto</button>
+        <button onclick="window.location.href='ubicacion.html';">Ubicación</button>
+    </nav>
 
     <main>
-        <section id="quienes-somos" style="display: none;">
-            <h2>¿Quiénes Somos?</h2>
-            <p>Somos una empresa familiar con años de experiencia en el rubro de la construcción y asesorías técnicas. Nuestro compromiso es ofrecer soluciones de alta calidad, respaldadas por un equipo de expertos que se dedican a cada proyecto con pasión y profesionalismo.</p>
-            <p>En Edificapro7, creemos en la importancia de construir no solo estructuras, sino también relaciones de confianza con nuestros clientes. Nos esforzamos por entender sus necesidades y brindarles un servicio excepcional en cada paso del camino.</p>
-        </section>
-
         <section id="servicios">
             <h2>Nuestros Servicios</h2>
             <div class="servicio">
@@ -45,31 +49,35 @@
                 <p>Ingeniería de prevención de riesgos, civil, industrial, informática, y más.</p>
             </div>
         </section>
+
+        <section id="quienes-somos" style="display: none;">
+            <h2>¿Quiénes somos?</h2>
+            <p>Somos una empresa familiar con años de experiencia en el rubro de la construcción y asesorías técnicas. Nos dedicamos a brindar soluciones innovadoras y efectivas, priorizando la satisfacción de nuestros clientes.</p>
+        </section>
     </main>
 
     <footer>
         <p>&copy; 2024 Edificapro7. Todos los derechos reservados.</p>
     </footer>
 
-    <script>
-        function mostrarQuienesSomos() {
-            const quienesSomosSection = document.getElementById('quienes-somos');
-            if (quienesSomosSection.style.display === 'none') {
-                quienesSomosSection.style.display = 'block';
-            } else {
-                quienesSomosSection.style.display = 'none';
-            }
-        }
+    <div id="sidebar">
+        <button onclick="toggleQuienesSomos()">¿Quiénes somos?</button>
+        <div id="quienes-somos" style="display: none;">
+            <p>Somos una empresa familiar con años de experiencia en el rubro de la construcción y asesorías técnicas. Nos dedicamos a brindar soluciones innovadoras y efectivas, priorizando la satisfacción de nuestros clientes.</p>
+        </div>
+    </div>
 
-        function toggleMenu() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
-        }
-
-        function closeMenu() {
-            const sidebar = document.getElementById('sidebar');
-            sidebar.style.display = 'none';
-        }
+    <!-- Código de Tawk.to -->
+    <script type="text/javascript">
+        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+        (function(){
+            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+            s1.async=true;
+            s1.src='https://embed.tawk.to/6712ea9c2480f5b4f58fc14c/1iagu8tff';
+            s1.charset='UTF-8';
+            s1.setAttribute('crossorigin','*');
+            s0.parentNode.insertBefore(s1,s0);
+        })();
     </script>
 </body>
 </html>

@@ -1,7 +1,7 @@
 /* Reset general para el cuerpo */
 body {
     margin: 0;
-    font-family: 'Arial', sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 /* Estilo para el fondo de la página */
@@ -13,38 +13,14 @@ body {
     color: white; /* Cambia el color del texto a blanco para mayor contraste */
 }
 
-/* Estilos para computadoras */
-@media (min-width: 768px) {
-    nav {
-        display: flex;
-        justify-content: space-around;
-    }
-
-    main {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-}
-
 /* Estilo para el encabezado */
 header {
     display: flex; /* Usamos flexbox para alinear elementos */
     align-items: center; /* Centra verticalmente */
-    justify-content: flex-start; /* Alinea todos los elementos a la izquierda */
+    justify-content: space-between; /* Espacio entre el título y el ícono del menú */
     background-color: white; /* Color de fondo del encabezado */
     padding: 10px 20px; /* Espaciado del encabezado */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-}
-
-/* Estilo para el ícono del menú */
-#menu-icon {
-    background-color: transparent; /* Fondo transparente */
-    border: none; /* Sin borde */
-    color: black; /* Color negro para el ícono */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    font-size: 24px; /* Tamaño del ícono */
-    margin-right: 20px; /* Espacio a la derecha del ícono */
 }
 
 /* Estilo para el logo */
@@ -65,44 +41,34 @@ header {
 
 /* Estilo para el título */
 header h1 {
-    font-size: 24px; /* Tamaño de fuente */
-    color: black; /* Color del texto negro */
+    font-size: 28px; /* Tamaño de fuente */
+    color: black; /* Color del texto del título */
     margin: 0; /* Sin margen */
+    font-family: 'Arial Black', sans-serif; /* Tipo de letra más llamativo */
 }
 
-/* Estilo para la navegación */
-nav {
-    margin: 20px; /* Margen para los botones de navegación */
-}
-
-/* Estilo para los botones de contacto */
-.contact-button {
-    background-color: #00bcd4; /* Color de fondo */
-    color: white; /* Color del texto */
-    padding: 15px 30px; /* Espaciado interno */
-    border: none; /* Sin borde */
-    border-radius: 5px; /* Bordes redondeados */
-    font-size: 16px; /* Tamaño de fuente */
+/* Estilo para el ícono del menú */
+.menu-icon {
+    width: 30px; /* Ajusta el tamaño del ícono */
     cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    transition: background-color 0.3s; /* Transición suave al cambiar de color */
-    margin: 10px 0; /* Margen superior e inferior */
+    color: black; /* Color del ícono */
 }
 
-/* Efecto al pasar el mouse */
-.contact-button:hover {
-    background-color: #008c9e; /* Color más oscuro al pasar el mouse */
+/* Estilo para el menú lateral */
+#sidebar {
+    position: fixed; /* Mantener el menú en la misma posición */
+    right: 0;
+    top: 60px; /* Justo debajo del header */
+    width: 200px;
+    background-color: hsl(248, 98%, 48%); /* Color del fondo del menú */
+    padding: 15px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: none; /* Inicialmente oculto */
 }
 
 /* Estilo para el contenido principal */
 main {
     padding: 20px; /* Espaciado del contenido principal */
-}
-
-/* Estilo para las secciones de servicios */
-#servicios {
-    display: flex; /* Usamos flexbox para los servicios */
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-    gap: 20px; /* Espaciado entre elementos */
 }
 
 /* Sección ¿Quiénes somos? */
@@ -114,19 +80,20 @@ main {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
 
-/* Estilo para los servicios */
-.servicio {
-    background-color: hsl(216, 98%, 51%); /* Color de fondo del servicio */
-    border: 1px solid hwb(0 20% 79%); /* Borde sutil */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 15px; /* Espaciado interno */
-    flex: 1 1 calc(30% - 20px); /* Toma el 30% del ancho disponible, menos margen */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    transition: transform 0.3s; /* Animación de transformación */
-}
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    .logo {
+        width: 40px; /* Ajustar el tamaño en pantallas pequeñas */
+    }
 
-.servicio:hover {
-    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+    nav button {
+        padding: 8px 12px; /* Ajustar el espaciado de los botones */
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+
+    #sidebar {
+        display: block; /* Mostrar el menú en dispositivos móviles */
+    }
 }
 
 /* Estilo para el pie de página */
@@ -142,21 +109,5 @@ footer {
 /* Estilo para el pie de página */
 footer p {
     margin: 0; /* Sin margen */
-    color: rgb(255, 255, 255); /* Color del texto blanco */
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 600px) {
-    #logo {
-        width: 40px; /* Ajustar el tamaño en pantallas pequeñas */
-    }
-
-    nav button {
-        padding: 8px 12px; /* Ajustar el espaciado de los botones */
-        font-size: 14px; /* Tamaño de fuente más pequeño */
-    }
-
-    .servicio {
-        flex: 1 1 calc(100% - 20px); /* Toma el 100% del ancho disponible en pantallas pequeñas */
-    }
+    color: rgb(0, 0, 0); /* Color del texto */
 }
