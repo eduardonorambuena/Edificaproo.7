@@ -50,6 +50,25 @@
                 <p>Ingeniería de prevención de riesgos, civil, industrial, informática, y más.</p>
             </div>
         </section>
+        <section id="calculadora">
+            <h2>Calcula tu Presupuesto</h2>
+            <form id="form-calculadora">
+                <label for="metros">Metros Cuadrados:</label>
+                <input type="number" id="metros" name="metros" placeholder="Ingresa los metros cuadrados" required>
+        
+                <label for="tipo-servicio">Tipo de Servicio:</label>
+                <select id="tipo-servicio" name="tipo-servicio" required>
+                    <option value="construccion">Construcción</option>
+                    <option value="remodelacion">Remodelación</option>
+                    <option value="asesoria">Asesoría Técnica</option>
+                </select>
+        
+                <button type="button" onclick="calcularPresupuesto()">Calcular</button>
+            </form>
+        
+            <p id="resultado-calculadora"></p>
+        </section>
+        
 
         <section id="quienes-somos" style="display: none;">
             <h2>¿Quiénes somos?</h2>
@@ -64,9 +83,9 @@
     <footer>
         <h2>Conéctate con Nosotros</h2>
         <div class="social-links">
-            <a href="https://www.facebook.com/tuempresa" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/tuempresa" target="_blank"><img src="instagram-icon.png" alt="Instagram"></a>
-            <a href="https://www.linkedin.com/tuempresa" target="_blank"><img src="linkedin-icon.png" alt="LinkedIn"></a>
+            <a href="https://www.facebook.com/tuempresa" target="_blank"><img src="facebook.jpg" alt="Facebook"></a>
+            <a href="https://www.instagram.com/edificapro7/profilecard/?igsh=Z2k0bmx4azAwd285" target="_blank"><img src="instagram.webp" alt="Instagram"></a>
+            <a href="https://www.linkedin.com/tuempresa" target="_blank"><img src="linkedin.jpg" alt="LinkedIn"></a>
         </div>
     </footer>
     
