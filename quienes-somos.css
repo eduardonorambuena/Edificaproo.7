@@ -3,7 +3,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between; /* Espacio entre título y el icono del menú */
-    background-color: white; /* Fondo blanco */
+    background-color: #0080e2; /* Fondo blanco */
     padding: 10px 20px;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
