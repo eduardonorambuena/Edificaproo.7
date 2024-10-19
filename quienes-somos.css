@@ -29,10 +29,10 @@ header {
 
 /* Estilo para el contenido de ¿Quiénes somos? */
 #quienes-somos {
-    background-color: hsl(248, 98%, 48%); /* Fondo celeste claro */
+    background-color: hwb(0 100% 0%); /* Fondo celeste claro */
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    color: white; /* Color de texto */
+    color: #020202; /* Color de texto */
 }
