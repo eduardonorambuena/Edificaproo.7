@@ -111,3 +111,41 @@ footer p {
     margin: 0; /* Sin margen */
     color: rgb(0, 0, 0); /* Color del texto */
 }
+
+/* Estilo para las secciones de servicios */
+#servicios {
+    display: flex; /* Usamos flexbox para los servicios */
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
+    gap: 20px; /* Espaciado entre elementos */
+}
+
+.servicio {
+    background-color: hsl(216, 98%, 51%); /* Color de fondo del servicio */
+    border: 1px solid hwb(0 20% 79%); /* Borde sutil */
+    border-radius: 5px; /* Bordes redondeados */
+    padding: 15px; /* Espaciado interno */
+    flex: 1 1 calc(30% - 20px); /* Toma el 30% del ancho disponible, menos margen */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    transition: transform 0.3s; /* Animación de transformación */
+    color: white; /* Color de texto en blanco */
+}
+
+.servicio:hover {
+    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    .logo {
+        width: 40px; /* Ajustar el tamaño en pantallas pequeñas */
+    }
+
+    nav button {
+        padding: 8px 12px; /* Ajustar el espaciado de los botones */
+        font-size: 14px; /* Tamaño de fuente más pequeño */
+    }
+
+    .servicio {
+        flex: 1 1 calc(100% - 20px); /* Toma el 100% del ancho disponible en pantallas pequeñas */
+    }
+}
