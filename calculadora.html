@@ -3,38 +3,74 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora de Estimación de Proyecto</title>
+    <title>Calculadora - Edificapro7</title>
+    <!-- Enlace al archivo CSS -->
+    <link rel="stylesheet" href="calculadora.css">
 </head>
 <body>
-    <section id="calculadora">
-        <h2>Calculadora de Estimación de Proyecto</h2>
-        <form id="form-calculadora">
-            <label for="empleados">Número de Empleados:</label>
-            <input type="number" id="empleados" name="empleados" required>
+    <div class="calculadora">
+        <div class="display" id="display">0</div>
+        <button class="reset" onclick="reset()">C</button>
+        <button onclick="addNumber('7')">7</button>
+        <button onclick="addNumber('8')">8</button>
+        <button onclick="addNumber('9')">9</button>
+        <button class="operacion" onclick="setOperation('+')">+</button>
+        <button onclick="addNumber('4')">4</button>
+        <button onclick="addNumber('5')">5</button>
+        <button onclick="addNumber('6')">6</button>
+        <button class="operacion" onclick="setOperation('-')">-</button>
+        <button onclick="addNumber('1')">1</button>
+        <button onclick="addNumber('2')">2</button>
+        <button onclick="addNumber('3')">3</button>
+        <button class="operacion" onclick="setOperation('*')">×</button>
+        <button onclick="addNumber('0')">0</button>
+        <button onclick="addDecimal()">.</button>
+        <button class="igual" onclick="calculate()">=</button>
+        <button class="operacion" onclick="setOperation('/')">÷</button>
+    </div>
 
-            <label for="horas">Horas de Trabajo Estimadas:</label>
-            <input type="number" id="horas" name="horas" required>
+    <script>
+        let displayValue = '';
+        let operation = '';
+        let firstNumber = '';
+        let secondNumber = '';
 
-            <label for="tipo-servicio">Tipo de Servicio:</label>
-            <select id="tipo-servicio" name="tipo-servicio" required>
-                <option value="electricidad">Asesoría Eléctrica</option>
-                <option value="gas">Asesoría en Gas</option>
-                <option value="construccion">Construcción</option>
-                <option value="ingenieria">Ingeniería</option>
-            </select>
+        function addNumber(num) {
+            displayValue += num;
+            document.getElementById('display').textContent = displayValue;
+        }
 
-            <label for="materiales">Materiales Adicionales:</label>
-            <input type="checkbox" id="materiales" name="materiales"> Sí
+        function addDecimal() {
+            if (!displayValue.includes('.')) {
+                displayValue += '.';
+                document.getElementById('display').textContent = displayValue;
+            }
+        }
 
-            <label for="costo-hora">Costo por Hora (en $):</label>
-            <input type="number" id="costo-hora" name="costo-hora" required>
+        function setOperation(op) {
+            if (displayValue !== '') {
+                firstNumber = displayValue;
+                operation = op;
+                displayValue = '';
+            }
+        }
 
-            <button type="button" onclick="calcularEstimacion()">Calcular Estimación</button>
-        </form>
+        function calculate() {
+            if (firstNumber !== '' && operation !== '' && displayValue !== '') {
+                secondNumber = displayValue;
+                let result = eval(firstNumber + operation + secondNumber);
+                document.getElementById('display').textContent = result;
+                displayValue = result.toString();
+            }
+        }
 
-        <p id="resultado"></p>
-    </section>
-
-    <script src="calculadora.js"></script>
+        function reset() {
+            displayValue = '';
+            operation = '';
+            firstNumber = '';
+            secondNumber = '';
+            document.getElementById('display').textContent = '0';
+        }
+    </script>
 </body>
 </html>

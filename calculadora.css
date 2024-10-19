@@ -1,26 +1,84 @@
-#calculadora form {
+/* Estilos generales */
+body {
+    background-color: #f4f4f9; /* Fondo suave y limpio */
+    font-family: 'Arial', sans-serif; /* Fuente simple y profesional */
     display: flex;
-    flex-direction: column;
-    max-width: 600px;
-    margin: 0 auto;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
 }
 
-#calculadora input, #calculadora select {
-    margin-bottom: 15px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ccc;
+/* Contenedor de la calculadora */
+.calculadora {
+    background-color: #fff; /* Fondo blanco para destacar */
+    padding: 30px;
+    border-radius: 15px; /* Bordes redondeados suaves */
+    box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1); /* Sombra elegante */
+    width: 320px;
 }
 
-#calculadora button {
-    padding: 10px;
-    background-color: #4CAF50;
+/* Display de la calculadora */
+.display {
+    background-color: #333; /* Fondo oscuro */
+    color: #fff; /* Texto blanco */
+    font-size: 32px;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: right; /* Alineación a la derecha */
+    margin-bottom: 20px;
+    height: 60px;
+    box-shadow: inset 0px 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilos para los botones */
+button {
+    background-color: #007BFF; /* Color azul llamativo */
     color: white;
     border: none;
-    border-radius: 5px;
+    padding: 20px;
+    font-size: 18px;
+    border-radius: 10px;
     cursor: pointer;
+    margin: 5px;
+    transition: background-color 0.3s ease, transform 0.1s ease;
+    width: 70px;
+    height: 70px;
 }
 
-#calculadora button:hover {
-    background-color: #45a049;
+/* Efecto al pasar el mouse */
+button:hover {
+    background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+}
+
+/* Efecto al presionar */
+button:active {
+    transform: scale(0.95); /* Efecto de presión */
+}
+
+/* Estilo especial para los botones de operación */
+.operacion {
+    background-color: #28a745; /* Color verde para operaciones */
+}
+
+.operacion:hover {
+    background-color: #218838; /* Verde más oscuro al pasar el mouse */
+}
+
+/* Botón de igual */
+.igual {
+    background-color: #ffc107; /* Color amarillo para el botón de igual */
+}
+
+.igual:hover {
+    background-color: #e0a800; /* Amarillo más oscuro al pasar el mouse */
+}
+
+/* Botón de reset */
+.reset {
+    background-color: #dc3545; /* Color rojo para el reset */
+}
+
+.reset:hover {
+    background-color: #c82333; /* Rojo más oscuro al pasar el mouse */
 }
