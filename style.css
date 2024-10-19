@@ -3,6 +3,7 @@ body {
     margin: 0;
     font-family: Arial, sans-serif;
 }
+
 /* Estilo para el fondo de la página */
 body {
     background-image: url('fondo.jpg'); /* Cambia la ruta según la ubicación de tu imagen */
@@ -31,7 +32,7 @@ header {
     display: flex; /* Usamos flexbox para alinear elementos */
     align-items: center; /* Centra verticalmente */
     justify-content: flex-start; /* Alinea todos los elementos a la izquierda */
-    background-color: hwb(225 52% 42%); /* Color de fondo del encabezado */
+    background-color: white; /* Color de fondo blanco */
     padding: 10px 20px; /* Espaciado del encabezado */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
 }
@@ -52,12 +53,12 @@ header {
     transform: scale(0.9); /* Reduce el tamaño del logo al 90% al hacer clic */
 }
 
-
 /* Estilo para el título */
 header h1 {
     font-size: 24px; /* Tamaño de fuente */
     color: #333; /* Color del texto */
     margin: 0; /* Sin margen */
+    margin-left: 20px; /* Espacio entre el logo y el título */
 }
 
 /* Estilo para la navegación */
@@ -82,7 +83,6 @@ nav {
 .contact-button:hover {
     background-color: #008c9e; /* Color más oscuro al pasar el mouse */
 }
-
 
 /* Estilo para el contenido principal */
 main {
@@ -128,7 +128,7 @@ footer p {
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 600px) {
-    #logo {
+    .logo {
         width: 40px; /* Ajustar el tamaño en pantallas pequeñas */
     }
 
@@ -141,11 +141,6 @@ footer p {
         flex: 1 1 calc(100% - 20px); /* Toma el 100% del ancho disponible en pantallas pequeñas */
     }
 }
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-}
 
 /* Estilo del menú lateral */
 #sidebar {
@@ -153,14 +148,14 @@ body {
     right: 0;
     top: 60px; /* Justo debajo del header */
     width: 200px;
-    background-color: #0f1010; /* Fondo celeste claro */
+    background-color: #f0f8ff; /* Fondo celeste claro */
     padding: 15px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
     display: none; /* Inicialmente oculto */
 }
 
-/* Efecto hover en el botón */
-button {
+/* Efecto hover en el botón del menú */
+#sidebar button {
     background-color: #007BFF; /* Color del botón */
     color: white;
     border: none;
@@ -168,19 +163,18 @@ button {
     margin: 5px 0;
     border-radius: 5px;
     cursor: pointer;
+    transition: background-color 0.3s; /* Transición suave */
 }
 
-button:hover {
+#sidebar button:hover {
     background-color: #0056b3; /* Color al pasar el mouse */
 }
 
 /* Sección ¿Quiénes somos? */
 #quienes-somos {
-    background-color: #f0f8ff; /* Fondo celeste claro */
+    background-color: hsl(248, 98%, 48%); /* Fondo celeste claro */
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
 }
-
-

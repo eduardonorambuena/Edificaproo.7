@@ -8,19 +8,15 @@
 </head>
 <body>
     <header>
-        <img src="logo.jpg" alt="Logo" class="logo">
+        <img src="imagenes/logo.png" alt="Logo" class="logo">
         <h1>Edificapro7</h1>
+        <div id="menu-icon" onclick="toggleMenu()">&#9776;</div> <!-- Ícono de menú -->
     </header>
-
-    <nav>
-        <button onclick="window.location.href='contacto.html';">Contacto</button>
-        <button onclick="window.location.href='ubicacion.html';">Ubicación</button>
-        <button id="menu-toggle">Menú</button>
-    </nav>
 
     <aside id="sidebar">
         <h3>Menú</h3>
         <button onclick="mostrarQuienesSomos()">¿Quiénes Somos?</button>
+        <button onclick="closeMenu()">Cerrar</button>
     </aside>
 
     <main>
@@ -65,10 +61,15 @@
             }
         }
 
-        document.getElementById('menu-toggle').addEventListener('click', () => {
+        function toggleMenu() {
             const sidebar = document.getElementById('sidebar');
             sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
-        });
+        }
+
+        function closeMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.style.display = 'none';
+        }
     </script>
 </body>
 </html>
