@@ -1,7 +1,55 @@
+body {
+    font-family: Arial, sans-serif; /* Fuente legible */
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: white; /* Fondo blanco */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+    max-width: 100px; /* Ajustar el tamaño del logo */
+    height: auto; /* Mantener la proporción del logo */
+}
+
+nav {
+    margin: 20px 0; /* Espaciado entre el header y el nav */
+    display: flex;
+    justify-content: center; /* Centrar los botones */
+}
+
+nav button {
+    margin: 0 10px; /* Espaciado entre los botones */
+    padding: 10px 15px;
+    border: none;
+    background-color: #4CAF50; /* Color de fondo de los botones */
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+nav button:hover {
+    background-color: #45a049; /* Cambio de color al pasar el mouse */
+}
+
+#contacto {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
 #contacto form {
     display: flex;
     flex-direction: column;
     max-width: 600px;
+    width: 100%; /* Ancho completo */
     margin: 0 auto;
     padding: 20px;
     background-color: #f4f4f4; /* Fondo gris claro */
@@ -34,4 +82,37 @@
 
 #contacto button:hover {
     background-color: #45a049;
+}
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #f4f4f4; /* Fondo gris claro */
+}
+
+#sidebar {
+    position: fixed;
+    right: 0;
+    top: 60px; /* Justo debajo del header */
+    width: 200px;
+    background-color: #0f1010; /* Fondo del menú */
+    padding: 15px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente oculto */
+}
+
+@media (max-width: 600px) {
+    header {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: flex-start; /* Alinear a la izquierda */
+    }
+
+    nav {
+        flex-direction: column; /* Cambiar a columna en móviles */
+        align-items: center; /* Centrar los botones */
+    }
+
+    nav button {
+        margin: 5px 0; /* Espaciado entre botones en móviles */
+    }
 }
