@@ -1,0 +1,38 @@
+/* Estilo para el encabezado */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Espacio entre título y el icono del menú */
+    background-color: white; /* Fondo blanco */
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el icono del menú */
+.menu-icon {
+    font-size: 24px; /* Tamaño del icono */
+    color: black; /* Color negro */
+    cursor: pointer; /* Cambia el cursor al pasar el mouse */
+}
+
+/* Estilo del menú lateral */
+#sidebar {
+    position: fixed;
+    right: 0;
+    top: 60px; /* Justo debajo del header */
+    width: 200px;
+    background-color: #0f1010; /* Fondo del menú */
+    padding: 15px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: none; /* Inicialmente oculto */
+}
+
+/* Estilo para el contenido de ¿Quiénes somos? */
+#quienes-somos {
+    background-color: hsl(248, 98%, 48%); /* Fondo celeste claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    color: white; /* Color de texto */
+}

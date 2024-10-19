@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¿Quiénes Somos? - Edificapro7</title>
+    <link rel="stylesheet" href="quienes somos.css">
+</head>
+<body>
+    <header>
+        <h1>¿Quiénes Somos?</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <nav id="sidebar">
+        <button onclick="window.location.href='index.html';">Inicio</button>
+        <button onclick="window.location.href='ubicacion.html';">Ubicación</button>
+        <button onclick="toggleQuienesSomos()">¿Quiénes Somos?</button>
+    </nav>
+
+    <main>
+        <section id="quienes-somos" style="display:none;">
+            <h2>Edificapro7</h2>
+            <p>Somos una empresa familiar con años de experiencia en el rubro de la construcción y asesorías técnicas. Nos dedicamos a ofrecer soluciones seguras y efectivas para tus proyectos, brindando un servicio personalizado que se adapta a tus necesidades.</p>
+            <p>Contamos con un equipo de profesionales comprometidos con la calidad y la seguridad, trabajando en cada proyecto con dedicación y responsabilidad. En Edificapro7, tu confianza es nuestra prioridad.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Edificapro7. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            var sidebar = document.getElementById('sidebar');
+            sidebar.style.display = sidebar.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleQuienesSomos() {
+            var section = document.getElementById('quienes-somos');
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
