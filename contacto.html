@@ -10,7 +10,7 @@
     <header>
         <img src="logo.jpg" alt="Logo" class="logo">
         <h1>Edificapro7</h1>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Ícono del menú -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </header>
 
     <nav>
@@ -21,6 +21,10 @@
     <main>
         <section id="contacto">
             <h2>Contacto</h2>
+            <div class="info-contacto">
+                <a class="btn-contacto" href="mailto:info@edificapro7.cl">Correo Electrónico</a>
+                <a class="btn-contacto" href="https://wa.me/56912345678" target="_blank">WhatsApp</a>
+            </div>
             <form action="procesar_contacto.php" method="POST">
                 <label for="nombre">Nombre Completo:</label>
                 <input type="text" id="nombre" name="nombre" required>
@@ -41,6 +45,12 @@
 
                 <label for="mensaje">Mensaje:</label>
                 <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                <label for="envio">Enviar a:</label>
+                <select id="envio" name="envio">
+                    <option value="correo">Correo Electrónico</option>
+                    <option value="whatsapp">WhatsApp</option>
+                </select>
 
                 <button type="submit">Enviar</button>
             </form>

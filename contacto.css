@@ -1,5 +1,6 @@
 body {
-    font-family: Arial, sans-serif; /* Fuente legible */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9; /* Fondo claro */
     margin: 0;
     padding: 0;
 }
@@ -8,53 +9,52 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
+    background-color: white;
     padding: 10px 20px;
-    background-color: white; /* Fondo blanco */
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .logo {
-    max-width: 100px; /* Ajustar el tamaño del logo */
-    height: auto; /* Mantener la proporción del logo */
+    max-width: 100px; /* Tamaño ajustado del logo */
 }
 
-nav {
-    margin: 20px 0; /* Espaciado entre el header y el nav */
-    display: flex;
-    justify-content: center; /* Centrar los botones */
-}
-
-nav button {
-    margin: 0 10px; /* Espaciado entre los botones */
-    padding: 10px 15px;
-    border: none;
-    background-color: #4CAF50; /* Color de fondo de los botones */
-    color: white;
-    border-radius: 5px;
+.menu-icon {
+    font-size: 24px;
+    color: black;
     cursor: pointer;
-    font-size: 16px;
 }
 
-nav button:hover {
-    background-color: #45a049; /* Cambio de color al pasar el mouse */
-}
-
+/* Estilo para el formulario de contacto */
 #contacto {
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
+    background-color: #fff; /* Fondo blanco para el contacto */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto; /* Centrando el contacto */
+}
+
+.info-contacto {
+    margin-bottom: 20px;
+    text-align: center; /* Centrando el texto */
+}
+
+.info-contacto a {
+    color: #4CAF50; /* Color para los enlaces */
+    text-decoration: none; /* Sin subrayado */
+}
+
+.info-contacto a:hover {
+    text-decoration: underline; /* Subrayado al pasar el mouse */
 }
 
 #contacto form {
     display: flex;
     flex-direction: column;
-    max-width: 600px;
-    width: 100%; /* Ancho completo */
-    margin: 0 auto;
-    padding: 20px;
-    background-color: #f4f4f4; /* Fondo gris claro */
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    width: 100%;
 }
 
 #contacto label {
@@ -67,7 +67,7 @@ nav button:hover {
     padding: 10px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    width: 100%; /* Ancho completo */
+    width: 100%;
 }
 
 #contacto button {
@@ -84,12 +84,7 @@ nav button:hover {
     background-color: #45a049;
 }
 
-footer {
-    text-align: center;
-    padding: 20px 0;
-    background-color: #f4f4f4; /* Fondo gris claro */
-}
-
+/* Estilo del menú lateral */
 #sidebar {
     position: fixed;
     right: 0;
@@ -99,20 +94,4 @@ footer {
     padding: 15px;
     box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
     display: none; /* Inicialmente oculto */
-}
-
-@media (max-width: 600px) {
-    header {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        align-items: flex-start; /* Alinear a la izquierda */
-    }
-
-    nav {
-        flex-direction: column; /* Cambiar a columna en móviles */
-        align-items: center; /* Centrar los botones */
-    }
-
-    nav button {
-        margin: 5px 0; /* Espaciado entre botones en móviles */
-    }
 }
