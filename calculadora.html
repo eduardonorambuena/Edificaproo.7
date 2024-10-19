@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Estimación de Proyecto</title>
+</head>
+<body>
+    <section id="calculadora">
+        <h2>Calculadora de Estimación de Proyecto</h2>
+        <form id="form-calculadora">
+            <label for="empleados">Número de Empleados:</label>
+            <input type="number" id="empleados" name="empleados" required>
+
+            <label for="horas">Horas de Trabajo Estimadas:</label>
+            <input type="number" id="horas" name="horas" required>
+
+            <label for="tipo-servicio">Tipo de Servicio:</label>
+            <select id="tipo-servicio" name="tipo-servicio" required>
+                <option value="electricidad">Asesoría Eléctrica</option>
+                <option value="gas">Asesoría en Gas</option>
+                <option value="construccion">Construcción</option>
+                <option value="ingenieria">Ingeniería</option>
+            </select>
+
+            <label for="materiales">Materiales Adicionales:</label>
+            <input type="checkbox" id="materiales" name="materiales"> Sí
+
+            <label for="costo-hora">Costo por Hora (en $):</label>
+            <input type="number" id="costo-hora" name="costo-hora" required>
+
+            <button type="button" onclick="calcularEstimacion()">Calcular Estimación</button>
+        </form>
+
+        <p id="resultado"></p>
+    </section>
+
+    <script src="calculadora.js"></script>
+</body>
+</html>
