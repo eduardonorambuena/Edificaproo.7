@@ -10,7 +10,7 @@
     <header>
         <img src="logo.jpg" alt="Logo" class="logo">
         <h1>Edificapro7</h1>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div> <!-- Ícono del menú -->
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
     </header>
 
     <nav>
@@ -21,41 +21,17 @@
     <main>
         <section id="contacto">
             <h2>Contacto</h2>
-            <form action="procesar_contacto.php" method="POST">
-                <label for="nombre">Nombre Completo:</label>
-                <input type="text" id="nombre" name="nombre" required>
+            <p>Si tienes alguna consulta o deseas más información sobre nuestros servicios, no dudes en contactarnos a través de los siguientes medios:</p>
 
-                <label for="email">Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="telefono">Teléfono:</label>
-                <input type="tel" id="telefono" name="telefono" required>
-
-                <label for="servicio">¿Qué servicio te interesa?</label>
-                <select id="servicio" name="servicio">
-                    <option value="asesoria-electrica">Asesoría Técnica de Electricidad</option>
-                    <option value="asesoria-gas">Asesoría Técnica en Gas</option>
-                    <option value="asesoria-construccion">Asesoría de Construcción</option>
-                    <option value="asesoria-ingenieria">Asesoría de Ingeniería</option>
-                </select>
-
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-
-                <label>¿Cómo deseas recibir la respuesta?</label>
-                <select id="contacto-preferencia" name="contacto-preferencia">
-                    <option value="whatsapp">WhatsApp</option>
-                    <option value="correo">Correo Electrónico</option>
-                </select>
-
-                <button type="submit">Enviar</button>
-            </form>
+            <div class="contact-buttons">
+                <a href="https://api.whatsapp.com/send?phone=56930077799" target="_blank" class="whatsapp-button">
+                    <img src="whatsapp-icon.png" alt="WhatsApp"> WhatsApp
+                </a>
+                <a href="mailto:edificapro7@gmail.com" class="gmail-button">
+                    <img src="gmail-icon.png" alt="Gmail"> Correo Electrónico
+                </a>
+            </div>
         </section>
-
-        <div class="contact-info">
-            <a href="https://api.whatsapp.com/send?phone=56930077799" target="_blank" class="whatsapp-button">WhatsApp</a>
-            <a href="mailto:edificapro7@gmail.com" class="email-button">Enviar Correo</a>
-        </div>
     </main>
 
     <footer>
