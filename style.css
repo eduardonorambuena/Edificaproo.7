@@ -128,5 +128,46 @@ footer p {
         flex: 1 1 calc(100% - 20px); /* Toma el 100% del ancho disponible en pantallas pequeñas */
     }
 }
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo del menú lateral */
+#sidebar {
+    position: fixed; /* Mantener el menú en la misma posición */
+    right: 0;
+    top: 60px; /* Justo debajo del header */
+    width: 200px;
+    background-color: #f0f8ff; /* Fondo celeste claro */
+    padding: 15px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    display: none; /* Inicialmente oculto */
+}
+
+/* Efecto hover en el botón */
+button {
+    background-color: #007BFF; /* Color del botón */
+    color: white;
+    border: none;
+    padding: 10px;
+    margin: 5px 0;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3; /* Color al pasar el mouse */
+}
+
+/* Sección ¿Quiénes somos? */
+#quienes-somos {
+    background-color: #f0f8ff; /* Fondo celeste claro */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Sombra suave */
+}
 
 
