@@ -10,17 +10,17 @@ body {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: #0d0d0d;
+    color: #ffffff;
 }
 
-/* Estilo para el encabezado */
+/* Estilo para la parte superior del encabezado */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white;
+    background-color: white; /* Parte superior blanca */
     padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 5px rgba(164, 164, 164, 0.1);
 }
 
 /* Estilo para el logo */
@@ -51,7 +51,7 @@ header h1 {
 .menu-icon {
     width: 30px;
     cursor: pointer;
-    color: black;
+    color: rgb(112, 112, 112);
 }
 
 /* Estilo para el menú lateral */
@@ -60,10 +60,43 @@ header h1 {
     right: 0;
     top: 60px;
     width: 200px;
-    background-color: hwb(200 10% 7%);
+    background-color: hwb(200 46% 52%);
     padding: 15px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    box-shadow: -2px 0 5px rgb(126, 125, 125);
     display: none;
+}
+
+/* Estilo para los botones dentro del recuadro plomo */
+.botones-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+/* Estilo para cada botón */
+.botones-container button {
+    background-color: #6c757d; /* Color plomo */
+    color: white;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Efecto al pasar el mouse sobre los botones */
+.botones-container button:hover {
+    background-color: #5a6268; /* Tono plomo más oscuro al pasar el mouse */
+    transform: scale(1.05);
+}
+
+/* Efecto al hacer clic en los botones */
+.botones-container button:active {
+    background-color: #545b62; /* Tono aún más oscuro al hacer clic */
 }
 
 /* Estilo para el contenido principal */
@@ -123,11 +156,6 @@ main {
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
 }
 
-/* Efecto al pasar el mouse */
-.servicio:hover {
-    transform: scale(1.05);
-}
-
 /* Sección ¿Quiénes somos? */
 #quienes-somos {
     background-image: url('imagenes/sello-verde-sec.png');
@@ -140,6 +168,7 @@ main {
     margin: 20px 0;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
 }
+
 /* Título de ¿Quiénes somos? */
 #quienes-somos h2 {
     font-size: 32px;
@@ -155,8 +184,6 @@ main {
     color: hsl(0, 0%, 100%); /* Color del texto igual al de los otros recuadros */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra similar */
 }
-
-
 
 /* Estilo para el pie de página */
 footer {
@@ -208,5 +235,11 @@ footer p {
 
     .servicio {
         flex: 1 1 calc(100% - 20px);
+    }
+
+    /* Ajustar los botones para pantallas pequeñas */
+    .botones-container button {
+        padding: 10px 20px;
+        font-size: 16px;
     }
 }
