@@ -13,17 +13,18 @@ body {
     color: #ffffff;
 }
 
-/* Estilo para la parte superior del encabezado */
+/* Estilo para la parte superior del encabezado, asegurando que la imagen de fondo cubra toda la zona */
 header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: white; /* Parte superior blanca */
-    padding: 10px 10px;
+    background-image: url('imagenes/fondo-borroso-oscuro-abstracto-color-textura-degradado-suave-patron-sitio-web-brillante-encabezado-banner-o-imagen-arte-grafico-barra-lateral_1258-85459.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #ffffff;
+    padding: 20px;
     box-shadow: 0 2px 5px rgba(134, 134, 134, 0.1);
-    width: 100%; /* Asegura que el encabezado esté a lo largo de toda la página */
-    position: relative; /* Para que se mantenga en la parte superior */
-    z-index: 10; /* Para asegurarse de que esté por encima de otros elementos */
 }
 
 /* Estilo para el logo */
@@ -45,7 +46,7 @@ header {
 /* Estilo para el título */
 header h1 {
     font-size: 28px;
-    color: black;
+    color: white;
     margin: 0;
     font-family: 'Victor Mono', sans-serif;
 }
@@ -116,6 +117,11 @@ header h1 {
     background-color: #218838; /* Tono verde más oscuro al pasar el mouse */
 }
 
+/* Estilo para el contenido principal */
+main {
+    padding: 20px;
+}
+
 /* Estilo para los recuadros de los servicios */
 #servicios {
     display: flex;
@@ -125,12 +131,11 @@ header h1 {
     justify-content: center; /* Centra los recuadros */
 }
 
-/* Recuadro de servicio */
 .servicio {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white;
+    color: white; /* Color blanco para el texto */
     border-radius: 10px;
     padding: 20px;
     flex: 1 1 calc(30% - 20px);
@@ -147,16 +152,55 @@ header h1 {
 .servicio h3 {
     font-size: 32px;
     font-weight: bold;
-    color: white;
+    color: white; /* Color blanco para el título */
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
 }
 
 /* Descripción de los servicios */
 .servicio p {
     font-size: 22px;
-    color: white;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    color: white; /* Color blanco para el texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+}
+
+/* Estilo para el título de los servicios */
+#servicios h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* Color blanco para el título */
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Añade espacio debajo del título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+}
+
+/* Sección ¿Quiénes somos? */
+#quienes-somos {
+    background-image: url('imagenes/sello-verde-sec.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(8, 8, 8);
+    padding: 20px;
+    border-radius: 10px;
+    margin: 20px 0;
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
+}
+
+/* Título de ¿Quiénes somos? */
+#quienes-somos h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff; /* Morado para que combine con la paleta */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra similar */
+}
+
+/* Descripción de ¿Quiénes somos? */
+#quienes-somos p {
+    font-size: 24px;
+    color: hsl(0, 0%, 100%); /* Color del texto igual al de los otros recuadros */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra similar */
 }
 
 /* Estilo para el pie de página */
@@ -171,6 +215,11 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+}
+
+footer p {
+    margin: 0;
+    color: rgb(2, 2, 2);
 }
 
 /* Estilo para las redes sociales */
