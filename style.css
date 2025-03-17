@@ -108,7 +108,7 @@ main {
 
 /* Descripción de los servicios */
 .servicio p {
-    font-size: 18px;
+    font-size: 22px;
     color: white; /* Color blanco para el texto */
     text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
 }
@@ -130,7 +130,7 @@ main {
 
 /* Sección ¿Quiénes somos? */
 #quienes-somos {
-    background-image: url('imagenes/quienes-somos-fondo.jpg');
+    background-image: url('imagenes/sello-verde-sec.png');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -140,6 +140,23 @@ main {
     margin: 20px 0;
     box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
 }
+/* Título de ¿Quiénes somos? */
+#quienes-somos h2 {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #ffffff; /* Morado para que combine con la paleta */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra similar */
+}
+
+/* Descripción de ¿Quiénes somos? */
+#quienes-somos p {
+    font-size: 24px;
+    color: hsl(0, 0%, 100%); /* Color del texto igual al de los otros recuadros */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra similar */
+}
+
+
 
 /* Estilo para el pie de página */
 footer {
