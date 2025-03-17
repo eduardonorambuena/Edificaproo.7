@@ -6,184 +6,157 @@ body {
 
 /* Estilo para el fondo de la página */
 body {
-    background-image: url('imagenes/fondo.jpg'); /* Cambia la ruta según la ubicación de tu imagen */
-    background-size: cover; /* Ajusta la imagen para cubrir toda la pantalla */
-    background-position: center; /* Centra la imagen */
-    background-repeat: no-repeat; /* Evita que la imagen se repita */
-    color: #0d0d0d; /* Cambia el color del texto a blanco para mayor contraste */
+    background-image: url('imagenes/fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #0d0d0d;
 }
 
 /* Estilo para el encabezado */
 header {
-    display: flex; /* Usamos flexbox para alinear elementos */
-    align-items: center; /* Centra verticalmente */
-    justify-content: space-between; /* Espacio entre el título y el ícono del menú */
-    background-color: white; /* Color de fondo del encabezado */
-    padding: 10px 20px; /* Espaciado del encabezado */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    padding: 10px 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 /* Estilo para el logo */
 .logo {
-    width: 150px; /* Ancho inicial del logo */
-    transition: transform 0.3s ease; /* Transición suave para la transformación */
+    width: 150px;
+    transition: transform 0.3s ease;
 }
 
 /* Efecto al pasar el mouse */
 .logo:hover {
-    transform: scale(1.1); /* Aumenta el tamaño del logo al 110% */
+    transform: scale(1.1);
 }
 
 /* Efecto al hacer clic */
 .logo:active {
-    transform: scale(0.9); /* Reduce el tamaño del logo al 90% al hacer clic */
+    transform: scale(0.9);
 }
 
 /* Estilo para el título */
 header h1 {
-    font-size: 28px; /* Tamaño de fuente */
-    color: black; /* Color del texto del título */
-    margin: 0; /* Sin margen */
-    font-family: 'Victor Mono', sans-serif; /* Tipo de letra más llamativo */
+    font-size: 28px;
+    color: black;
+    margin: 0;
+    font-family: 'Victor Mono', sans-serif;
 }
 
 /* Estilo para el ícono del menú */
 .menu-icon {
-    width: 30px; /* Ajusta el tamaño del ícono */
-    cursor: pointer; /* Cambia el cursor al pasar el mouse */
-    color: black; /* Color del ícono */
+    width: 30px;
+    cursor: pointer;
+    color: black;
 }
 
 /* Estilo para el menú lateral */
 #sidebar {
-    position: fixed; /* Mantener el menú en la misma posición */
+    position: fixed;
     right: 0;
-    top: 60px; /* Justo debajo del header */
+    top: 60px;
     width: 200px;
-    background-color: hwb(200 10% 7%); /* Color del fondo del menú */
+    background-color: hwb(200 10% 7%);
     padding: 15px;
-    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra suave */
-    display: none; /* Inicialmente oculto */
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1);
+    display: none;
 }
 
 /* Estilo para el contenido principal */
 main {
-    padding: 20px; /* Espaciado del contenido principal */
+    padding: 20px;
 }
 
 /* Sección ¿Quiénes somos? */
 #quienes-somos {
-    background-color: hsl(248, 98%, 48%); /* Fondo celeste claro */
+    background-image: url('imagenes/quienes-somos-fondo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(8, 8, 8);
     padding: 20px;
     border-radius: 10px;
     margin: 20px 0;
-    box-shadow: 0 4px 10px rgb(255, 255, 255); /* Sombra suave */
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 600px) {
-    .logo {
-        width: 40px; /* Ajustar el tamaño en pantallas pequeñas */
-    }
-
-    nav button {
-        padding: 8px 12px; /* Ajustar el espaciado de los botones */
-        font-size: 14px; /* Tamaño de fuente más pequeño */
-    }
-
-    #sidebar {
-        display: block; /* Mostrar el menú en dispositivos móviles */
-    }
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
 }
 
 /* Estilo para el pie de página */
 footer {
-    background-color: hwb(0 84% 16%); /* Color de fondo del pie de página */
-    text-align: center; /* Centra el texto */
-    padding: 10px; /* Espaciado */
+    background-image: url('imagenes/fondo-footer.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
     position: relative;
-    bottom: 0; /* Fija en la parte inferior */
-    width: 100%; /* Ancho completo */
+    bottom: 0;
+    width: 100%;
 }
 
-/* Estilo para el pie de página */
 footer p {
-    margin: 0; /* Sin margen */
-    color: rgb(0, 0, 0); /* Color del texto */
+    margin: 0;
+    color: rgb(2, 2, 2);
 }
 
 /* Estilo para las secciones de servicios */
 #servicios {
-    display: flex; /* Usamos flexbox para los servicios */
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan */
-    gap: 20px; /* Espaciado entre elementos */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
 }
 
 .servicio {
-    background-color: hsl(216, 98%, 51%); /* Color de fondo del servicio */
-    border: 1px solid hwb(0 20% 79%); /* Borde sutil */
-    border-radius: 5px; /* Bordes redondeados */
-    padding: 15px; /* Espaciado interno */
-    flex: 1 1 calc(30% - 20px); /* Toma el 30% del ancho disponible, menos margen */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Sombra sutil */
-    transition: transform 0.3s; /* Animación de transformación */
-    color: white; /* Color de texto en blanco */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: rgb(3, 3, 3);
+    border: 1px solid hwb(0 20% 79%);
+    border-radius: 5px;
+    padding: 15px;
+    flex: 1 1 calc(30% - 20px);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
 }
 
 .servicio:hover {
-    transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse */
+    transform: scale(1.05);
+}
+
+/* Estilo para los íconos de redes sociales en el pie de página */
+.social-links a {
+    display: inline-block;
+    margin: 10px;
+}
+
+.social-links img {
+    width: 40px; /* Ajusta el tamaño de los íconos */
+    height: 40px; /* Ajusta el tamaño de los íconos */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre los íconos */
+.social-links img:hover {
+    transform: scale(1.1);
 }
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 600px) {
     .logo {
-        width: 40px; /* Ajustar el tamaño en pantallas pequeñas */
+        width: 40px;
     }
 
     nav button {
-        padding: 8px 12px; /* Ajustar el espaciado de los botones */
-        font-size: 14px; /* Tamaño de fuente más pequeño */
+        padding: 8px 12px;
+        font-size: 14px;
     }
 
     .servicio {
-        flex: 1 1 calc(100% - 20px); /* Toma el 100% del ancho disponible en pantallas pequeñas */
+        flex: 1 1 calc(100% - 20px);
     }
-}
-.social-links {
-    display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
-
-.social-links a {
-    margin: 0 10px;
-}
-
-.social-links img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: transform 0.3s ease;
-}
-
-.social-links img:hover {
-    transform: scale(1.1);
-}
-.boton-calculadora {
-    background-color: #4CAF50; /* Verde */
-    border: none;
-    color: white;
-    padding: 15px 32px;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 16px;
-    margin: 10px 0;
-    cursor: pointer;
-    border-radius: 8px;
-    transition: background-color 0.3s ease;
-}
-
-.boton-calculadora:hover {
-    background-color: #45a049; /* Verde más oscuro al pasar el mouse */
 }
