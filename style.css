@@ -6,7 +6,7 @@ body {
 
 /* Estilo para el fondo de la página */
 body {
-    background-image: url('imagenes/fondo.jpg');
+    background-image: url('imagenes/fondo-borroso-oscuro-abstracto-color-textura-degradado-suave-patron-sitio-web-brillante-encabezado-banner-o-imagen-arte-grafico-barra-lateral_1258-85459.avif');
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -19,8 +19,11 @@ header {
     align-items: center;
     justify-content: space-between;
     background-color: white; /* Parte superior blanca */
-    padding: 10px 20px;
-    box-shadow: 0 2px 5px rgba(164, 164, 164, 0.1);
+    padding: 10px 10px;
+    box-shadow: 0 2px 5px rgba(134, 134, 134, 0.1);
+    width: 100%; /* Asegura que el encabezado esté a lo largo de toda la página */
+    position: relative; /* Para que se mantenga en la parte superior */
+    z-index: 10; /* Para asegurarse de que esté por encima de otros elementos */
 }
 
 /* Estilo para el logo */
@@ -66,23 +69,26 @@ header h1 {
     display: none;
 }
 
-/* Estilo para los botones dentro del recuadro plomo */
+/* Estilo para el contenedor de los botones */
 .botones-container {
+    background-color: #6c757d; /* Fondo color plomo */
+    padding: 20px;  /* Relleno para separar los botones del borde */
+    border-radius: 10px; /* Bordes redondeados */
     display: flex;
     justify-content: center;
-    margin-top: 30px;
+    gap: 15px;  /* Espaciado entre los botones */
+    margin-top: 30px;  /* Espaciado desde la parte superior */
 }
 
-/* Estilo para cada botón */
+/* Estilo para cada botón dentro del contenedor */
 .botones-container button {
-    background-color: #6c757d; /* Color plomo */
-    color: white;
+    background-color: #ffffff; /* Fondo blanco para los botones */
+    color: #6c757d; /* Texto color plomo */
     padding: 12px 25px;
     font-size: 18px;
     font-weight: bold;
     border: none;
     border-radius: 5px;
-    margin: 10px;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -90,18 +96,24 @@ header h1 {
 
 /* Efecto al pasar el mouse sobre los botones */
 .botones-container button:hover {
-    background-color: #5a6268; /* Tono plomo más oscuro al pasar el mouse */
+    background-color: #f8f9fa; /* Fondo blanco más claro */
     transform: scale(1.05);
 }
 
 /* Efecto al hacer clic en los botones */
 .botones-container button:active {
-    background-color: #545b62; /* Tono aún más oscuro al hacer clic */
+    background-color: #e2e6ea; /* Fondo gris claro al hacer clic */
 }
 
-/* Estilo para el contenido principal */
-main {
-    padding: 20px;
+/* Estilo específico para el botón de la calculadora */
+.boton-calculadora {
+    background-color: #28a745; /* Fondo verde para el botón de la calculadora */
+    color: white; /* Texto blanco */
+}
+
+/* Efecto al pasar el mouse sobre el botón de la calculadora */
+.boton-calculadora:hover {
+    background-color: #218838; /* Tono verde más oscuro al pasar el mouse */
 }
 
 /* Estilo para los recuadros de los servicios */
@@ -113,11 +125,12 @@ main {
     justify-content: center; /* Centra los recuadros */
 }
 
+/* Recuadro de servicio */
 .servicio {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    color: white; /* Color blanco para el texto */
+    color: white;
     border-radius: 10px;
     padding: 20px;
     flex: 1 1 calc(30% - 20px);
@@ -134,55 +147,16 @@ main {
 .servicio h3 {
     font-size: 32px;
     font-weight: bold;
-    color: white; /* Color blanco para el título */
+    color: white;
     margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Descripción de los servicios */
 .servicio p {
     font-size: 22px;
-    color: white; /* Color blanco para el texto */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
-}
-
-/* Estilo para el título de los servicios */
-#servicios h2 {
-    font-size: 36px;
-    font-weight: bold;
-    color: white; /* Color blanco para el título */
-    text-align: center; /* Centra el título */
-    margin-bottom: 20px; /* Añade espacio debajo del título */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
-}
-
-/* Sección ¿Quiénes somos? */
-#quienes-somos {
-    background-image: url('imagenes/sello-verde-sec.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: rgb(8, 8, 8);
-    padding: 20px;
-    border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
-}
-
-/* Título de ¿Quiénes somos? */
-#quienes-somos h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #ffffff; /* Morado para que combine con la paleta */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra similar */
-}
-
-/* Descripción de ¿Quiénes somos? */
-#quienes-somos p {
-    font-size: 24px;
-    color: hsl(0, 0%, 100%); /* Color del texto igual al de los otros recuadros */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra similar */
+    color: white;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
 }
 
 /* Estilo para el pie de página */
@@ -197,11 +171,6 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
-}
-
-footer p {
-    margin: 0;
-    color: rgb(2, 2, 2);
 }
 
 /* Estilo para las redes sociales */
