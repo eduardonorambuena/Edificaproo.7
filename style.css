@@ -77,10 +77,11 @@ main {
     flex-wrap: wrap;
     gap: 20px;
     margin: 20px 0;
+    justify-content: center; /* Centra los recuadros */
 }
 
 .servicio {
-    background-size: contain; /* Cambiado de cover a contain */
+    background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     color: white; /* Color blanco para el texto */
@@ -89,21 +90,37 @@ main {
     flex: 1 1 calc(30% - 20px);
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     transition: transform 0.3s;
-    height: 300px; /* Altura fija para que todos los recuadros tengan el mismo tamaño */
+    height: 300px;
     display: flex;
     flex-direction: column;
-    justify-content: center; /* Centra el contenido verticalmente */
-    text-align: center; /* Centra el texto horizontalmente */
+    justify-content: center;
+    text-align: center;
 }
 
+/* Títulos de los servicios */
 .servicio h3 {
-    font-size: 28px;
+    font-size: 32px;
     font-weight: bold;
+    color: white; /* Color blanco para el título */
     margin-bottom: 10px;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
 }
 
+/* Descripción de los servicios */
 .servicio p {
-    font-size: 16px;
+    font-size: 18px;
+    color: white; /* Color blanco para el texto */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
+}
+
+/* Estilo para el título de los servicios */
+#servicios h2 {
+    font-size: 36px;
+    font-weight: bold;
+    color: white; /* Color blanco para el título */
+    text-align: center; /* Centra el título */
+    margin-bottom: 20px; /* Añade espacio debajo del título */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
 }
 
 /* Efecto al pasar el mouse */
@@ -150,8 +167,8 @@ footer p {
 }
 
 .social-links img {
-    width: 40px; /* Ajusta el tamaño de los íconos */
-    height: 40px; /* Ajusta el tamaño de los íconos */
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
