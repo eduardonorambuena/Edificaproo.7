@@ -3,7 +3,20 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #5e5b5b;
+    color: rgb(250, 238, 238); /* Asegura que el texto sea negro por defecto */
+}
+
+/* Fondo de pantalla completa con imagen */
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh; /* Asegura que el fondo ocupe toda la altura de la pantalla */
+    background-image: url('imagenes/fondo.prevencion.webp'); /* Ruta de la imagen de fondo */
+    background-size: cover; /* Hace que la imagen cubra toda la pantalla sin distorsionarse */
+    background-position: center center; /* Centra la imagen en la pantalla */
+    background-attachment: fixed; /* Hace que el fondo se quede fijo mientras haces scroll */
+    color: rgb(255, 255, 255); /* Asegura que el texto sea negro en todo el cuerpo */
 }
 
 /* Encabezado */
@@ -11,8 +24,8 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #333;
-    color: white;
+    background-color: #646262;
+    color: rgb(34, 33, 33); /* Color de texto blanco en el encabezado */
     padding: 15px;
 }
 
@@ -23,6 +36,7 @@ header {
 h1 {
     font-size: 24px;
     margin: 0;
+    color: white; /* Asegura que el título sea blanco */
 }
 
 /* Contenedor principal */
@@ -32,48 +46,117 @@ main {
 
 h2 {
     text-align: center;
-    color: #333;
+    color: rgb(247, 244, 244); /* Mantiene el color blanco para el título principal */
 }
 
-.servicio-prevencion {
-    background-color: white;
-    padding: 20px;
-    margin: 20px auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    max-width: 800px;
+ul {
+    list-style-type: none;
+    padding: 0;
 }
 
-.servicio-prevencion h3 {
-    color: #555;
+ul li {
+    margin: 10px 0;
+    color: rgb(26, 26, 26); /* Cambia el color de las listas a negro */
 }
 
-.servicio-prevencion p {
-    color: #666;
+/* Carrusel */
+.carousel-container {
+    position: relative;
+    max-width: 80%; /* Reducimos el tamaño del carrusel */
+    margin: 20px auto; /* Centra el carrusel */
+    overflow: hidden;
 }
 
-/* Botón de regreso */
-.boton-regreso {
-    display: block;
-    width: fit-content;
-    margin: 20px auto;
-    padding: 10px 20px;
-    background-color: #5a5a5a;
-    color: white;
-    text-decoration: none;
-    font-size: 16px;
+.carousel-slide {
+    display: flex;
+    transition: transform 1s ease;
+}
+
+.carousel-images {
+    position: relative;
+    flex: 1;
+    min-width: 100%;
+    overflow: hidden;
+}
+
+.carousel-images img {
+    width: 100%;
+    height: auto; /* La imagen se ajustará en altura proporcionalmente */
+    max-height: 300px; /* Limita la altura máxima de la imagen */
+    object-fit: cover; /* Ajusta la imagen sin deformarla */
+}
+
+.carousel-text {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(246, 239, 239, 0.6); /* Fondo semi-transparente para el texto */
+    color: rgb(77, 74, 74);
+    padding: 10px;
+    font-size: 18px;
+    max-width: 90%;
+}
+
+/* Estilos de los contenedores desplegables */
+.accordion {
+    background-color: black; /* Fondo negro para los contenedores desplegables */
+    color: white; /* Texto blanco */
+    cursor: pointer;
+    padding: 10px;
+    text-align: left;
+    border: none;
+    width: 100%;
+    font-size: 18px;
+    margin: 5px 0;
     border-radius: 5px;
-    text-align: center;
 }
 
-.boton-regreso:hover {
-    background-color: #444;
+.accordion:hover {
+    background-color: #333; /* Fondo más oscuro cuando se pasa el ratón sobre el contenedor */
 }
 
-/* Pie de página */
+.panel {
+    display: none;
+    padding: 0 18px;
+    background-color: #222; /* Fondo oscuro para el contenido */
+    overflow: hidden;
+    color: white;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 768px) {
+    .carousel-text {
+        font-size: 14px;
+        padding: 8px;
+    }
+
+    .carousel-container {
+        max-width: 95%; /* Para pantallas más pequeñas, hacemos el carrusel más grande */
+    }
+
+    .carousel-images img {
+        max-height: 200px; /* Reducimos la altura de la imagen en pantallas pequeñas */
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .carousel-text {
+        font-size: 12px;
+    }
+
+    .carousel-container {
+        max-width: 100%;
+    }
+
+    .carousel-images img {
+        max-height: 150px; /* Aún más pequeño para dispositivos muy pequeños */
+    }
+}
+
+/* Otros estilos de la página */
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #333;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo oscuro para el pie de página */
     color: white;
 }
