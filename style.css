@@ -269,6 +269,9 @@ footer p {
         padding: 10px 20px;
         font-size: 16px;
     }
+
+    /* Ajuste de los botones de certificación de gas y sello verde */
+    .botones-certificaciones {
+        flex-direction: column;
+    }
 }
-
-
