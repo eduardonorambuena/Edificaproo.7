@@ -6,18 +6,12 @@
     <title>Edificapro7 - Página de Inicio</title>
     <link rel="stylesheet" href="style.css">
     
-    
     <script>
         function toggleMenu() {
             const sidebar = document.getElementById('sidebar');
             const menuIcon = document.querySelector('.menu-icon');
             sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
             menuIcon.innerHTML = sidebar.style.display === 'block' ? '✖' : '☰'; // Cambiar entre ☰ y ✖
-        }
-
-        function toggleQuienesSomos() {
-            const content = document.getElementById('quienes-somos');
-            content.style.display = content.style.display === 'block' ? 'none' : 'block';
         }
     </script>
 </head>
@@ -40,12 +34,14 @@
         <button onclick="window.location.href='contacto.html';">Contacto</button>
         <button onclick="window.location.href='ubicacion.html';">Ubicación</button>
         <button onclick="window.location.href='calculadora.html';" class="boton-calculadora">Ir a la Calculadora</button>
-        <!-- Nuevos botones para Certificación de Gas y Sello Verde -->
+    </nav>
+    
+    <!-- Nuevos botones de Certificación de Gas y Sello Verde -->
+    <nav class="botones-container-bajo">
         <button onclick="window.location.href='certificacion-gas.html';">Certificación de Gas</button>
         <button onclick="window.location.href='sello-verde.html';">Sello Verde</button>
     </nav>
     
-
     <main>
         <section id="servicios">
             <h2>Nuestros Servicios</h2>
@@ -73,7 +69,6 @@
             <a href="https://wa.me/+56932193835" target="_blank" aria-label="WhatsApp"><img src="imagenes/logo.whatsap (3).png" alt="Ícono de WhatsApp"></a>
         </div>
     </footer>
-    
 
     <!-- Código de Tawk.to -->
     <script type="text/javascript">

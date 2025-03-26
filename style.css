@@ -1,98 +1,73 @@
-/* Reset general para el cuerpo */
+/* Estilo base para el cuerpo */
 body {
-    margin: 0;
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
-/* Estilo para el fondo de la página */
-body {
-    background-image: url('imagenes/fondo-borroso-oscuro-abstracto-color-textura-degradado-suave-patron-sitio-web-brillante-encabezado-banner-o-imagen-arte-grafico-barra-lateral_1258-85459.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: #ffffff;
-}
-
-/* Estilo para la parte superior del encabezado, asegurando que la imagen de fondo cubra toda la zona */
+/* Header */
 header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    background-image: url('imagenes/fondo-borroso-oscuro-abstracto-color-textura-degradado-suave-patron-sitio-web-brillante-encabezado-banner-o-imagen-arte-grafico-barra-lateral_1258-85459.avif');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
+    background-color: #6c757d;
     color: #ffffff;
     padding: 20px;
-    box-shadow: 0 2px 5px rgba(134, 134, 134, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-/* Estilo para el logo */
+/* Logo */
 .logo {
-    width: 150px;
-    transition: transform 0.3s ease;
+    max-width: 150px;
 }
 
-/* Efecto al pasar el mouse */
-.logo:hover {
-    transform: scale(1.1);
-}
-
-/* Efecto al hacer clic */
-.logo:active {
-    transform: scale(0.9);
-}
-
-/* Estilo para el título */
-header h1 {
-    font-size: 28px;
-    color: white;
-    margin: 0;
-    font-family: 'Victor Mono', sans-serif;
-}
-
-/* Estilo para el ícono del menú */
+/* Menú móvil */
 .menu-icon {
-    width: 30px;
+    font-size: 30px;
     cursor: pointer;
-    color: rgb(112, 112, 112);
 }
 
-/* Estilo para el menú lateral */
-#sidebar {
-    position: fixed;
-    right: 0;
-    top: 60px;
-    width: 200px;
-    background-color: hwb(200 46% 52%);
-    padding: 15px;
-    box-shadow: -2px 0 5px rgb(126, 125, 125);
+/* Barra lateral (menú móvil) */
+.sidebar {
     display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px;
+    height: 100%;
+    background-color: #6c757d;
+    padding: 20px;
+    z-index: 1000;
 }
 
-/* Efecto al pasar el mouse sobre los botones del sidebar */
-#sidebar button:hover {
-    background-color: #f8f9fa;
+.sidebar button {
+    background-color: #ffffff;
     color: #6c757d;
+    padding: 12px;
+    font-size: 18px;
+    width: 100%;
+    margin-bottom: 10px;
+    border: none;
     border-radius: 5px;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
-/* Estilo para el contenedor de los botones */
+.sidebar button:hover {
+    background-color: #f8f9fa;
+}
+
+/* Botones de la barra de navegación */
 .botones-container {
-    background-color: #6c757d; /* Fondo color plomo */
-    padding: 20px;  /* Relleno para separar los botones del borde */
-    border-radius: 10px; /* Bordes redondeados */
     display: flex;
     justify-content: center;
-    gap: 15px;  /* Espaciado entre los botones */
-    margin-top: 30px;  /* Espaciado desde la parte superior */
+    gap: 15px;
+    padding: 20px;
+    background-color: #6c757d;
 }
 
-/* Estilo para cada botón dentro del contenedor */
 .botones-container button {
-    background-color: #ffffff; /* Fondo blanco para los botones */
-    color: #6c757d; /* Texto color plomo */
+    background-color: #ffffff;
+    color: #6c757d;
     padding: 12px 25px;
     font-size: 18px;
     font-weight: bold;
@@ -103,175 +78,120 @@ header h1 {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto al pasar el mouse sobre los botones */
 .botones-container button:hover {
-    background-color: #f8f9fa; /* Fondo blanco más claro */
+    background-color: #f8f9fa;
     transform: scale(1.05);
 }
 
-/* Efecto al hacer clic en los botones */
 .botones-container button:active {
-    background-color: #e2e6ea; /* Fondo gris claro al hacer clic */
+    background-color: #e2e6ea;
 }
 
-/* Estilo específico para el botón de la calculadora */
-.boton-calculadora {
-    background-color: #28a745; /* Fondo verde para el botón de la calculadora */
-    color: white; /* Texto blanco */
+/* Nuevos botones debajo */
+.botones-container-bajo {
+    display: flex;
+    justify-content: space-evenly; /* Distribuye los botones de manera justa */
+    background-color: #6c757d;
+    padding: 20px;
+    gap: 20px;
 }
 
-/* Efecto al pasar el mouse sobre el botón de la calculadora */
-.boton-calculadora:hover {
-    background-color: #218838; /* Tono verde más oscuro al pasar el mouse */
+/* Estilo de los botones en la fila inferior */
+.botones-container-bajo button {
+    background-color: #ffffff;
+    color: #6c757d;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Estilo para el contenido principal */
+.botones-container-bajo button:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
+
+.botones-container-bajo button:active {
+    background-color: #e2e6ea;
+}
+
+/* Sección principal */
 main {
     padding: 20px;
 }
 
-/* Estilo para los recuadros de los servicios */
 #servicios {
     display: flex;
     flex-wrap: wrap;
     gap: 20px;
-    margin: 20px 0;
-    justify-content: center; /* Centra los recuadros */
 }
 
 .servicio {
+    width: 48%;
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
-    color: white; /* Color blanco para el texto */
-    border-radius: 10px;
-    padding: 20px;
-    flex: 1 1 calc(30% - 20px);
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s;
-    height: 300px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-/* Títulos de los servicios */
-.servicio h3 {
-    font-size: 32px;
-    font-weight: bold;
-    color: white; /* Color blanco para el título */
-    margin-bottom: 10px;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
-}
-
-/* Descripción de los servicios */
-.servicio p {
-    font-size: 22px;
-    color: white; /* Color blanco para el texto */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
-}
-
-/* Estilo para el título de los servicios */
-#servicios h2 {
-    font-size: 36px;
-    font-weight: bold;
-    color: white; /* Color blanco para el título */
-    text-align: center; /* Centra el título */
-    margin-bottom: 20px; /* Añade espacio debajo del título */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra para mejorar la legibilidad */
-}
-
-/* Sección ¿Quiénes somos? */
-#quienes-somos {
-    background-image: url('imagenes/sello-verde-sec.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: rgb(8, 8, 8);
+    color: white;
     padding: 20px;
     border-radius: 10px;
-    margin: 20px 0;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.6);
-}
-
-/* Título de ¿Quiénes somos? */
-#quienes-somos h2 {
-    font-size: 32px;
-    font-weight: bold;
-    margin-bottom: 10px;
-    color: #ffffff; /* Morado para que combine con la paleta */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra similar */
-}
-
-/* Descripción de ¿Quiénes somos? */
-#quienes-somos p {
-    font-size: 24px;
-    color: hsl(0, 0%, 100%); /* Color del texto igual al de los otros recuadros */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7); /* Sombra similar */
-}
-
-/* Estilo para el pie de página */
-footer {
-    background-image: url('imagenes/fondo-footer.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    color: rgb(0, 0, 0);
-    text-align: center;
-    padding: 10px;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    font-size: 15px;
-}
-
-footer p {
-    margin: 0;
-    color: rgb(2, 2, 2);
-}
-
-/* Estilo para las redes sociales */
-.social-links a {
-    display: inline-block;
-    margin: 15px;
-}
-
-.social-links img {
-    width: 40px;
-    height: 40px;
-    object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-/* Efecto al pasar el mouse sobre los íconos */
-.social-links img:hover {
-    transform: scale(1.1);
+.servicio:hover {
+    transform: scale(1.05);
 }
 
-/* Ajustes para dispositivos móviles */
-@media (max-width: 600px) {
-    .logo {
-        width: 40px;
+/* Footer */
+footer {
+    background-color: #6c757d;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+}
+
+/* Estilos de responsividad para dispositivos móviles */
+@media (max-width: 768px) {
+    /* Barra lateral (menú móvil) */
+    .sidebar {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -250px;
+        width: 250px;
+        height: 100%;
+        background-color: #6c757d;
+        transition: left 0.3s ease;
     }
 
-    nav button {
-        padding: 8px 12px;
-        font-size: 14px;
+    .sidebar button {
+        margin-bottom: 15px;
     }
 
-    .servicio {
-        flex: 1 1 calc(100% - 20px);
+    /* Mostrar el menú de la barra lateral al hacer clic en el icono */
+    .menu-icon {
+        display: block;
     }
 
-    /* Ajustar los botones para pantallas pequeñas */
-    .botones-container button {
-        padding: 10px 20px;
-        font-size: 16px;
-    }
-
-    /* Ajuste de los botones de certificación de gas y sello verde */
-    .botones-certificaciones {
+    .botones-container {
         flex-direction: column;
+    }
+
+    .botones-container-bajo {
+        flex-direction: column;
+    }
+
+    .botones-container-bajo button {
+        margin-bottom: 10px;
     }
 }
