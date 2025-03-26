@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios de Prevención - Edificapro7</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <img src="imagenes/logo.png.png" alt="Logo Edificapro7" class="logo">
+        <h1>Edificapro7</h1>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+    </header>
+
+    <div id="sidebar" class="sidebar">
+        <button onclick="window.location.href='index.html';">Inicio</button>
+        <button onclick="window.location.href='contacto.html';">Contacto</button>
+        <button onclick="window.location.href='ubicacion.html';">Ubicación</button>
+        <button onclick="window.location.href='calculadora.html';">Ir a la Calculadora</button>
+    </div>
+
+    <main>
+        <section id="prevencion">
+            <h2>Servicios de Prevención de Riesgos</h2>
+            <p>Ofrecemos asesoramiento y certificación en prevención de riesgos para garantizar la seguridad en obras y establecimientos comerciales.</p>
+            <ul>
+                <li>Inspección y evaluación de riesgos.</li>
+                <li>Capacitación en seguridad laboral.</li>
+                <li>Normativas de seguridad y prevención.</li>
+                <li>Gestión de planes de emergencia.</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Edificapro7. Todos los derechos reservados.</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const sidebar = document.getElementById('sidebar');
+            sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
