@@ -276,3 +276,55 @@ footer p {
         font-size: 16px;
     }
 }
+/* Estilo para el contenedor de los nuevos botones */
+.botones-nuevos-container {
+    background-color: #6c757d; /* Fondo color plomo */
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+/* Estilo para los botones */
+.botones-nuevos-container button {
+    background-color: #ffffff;
+    color: #6c757d;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.botones-nuevos-container button:hover {
+    background-color: #f8f9fa;
+    transform: scale(1.05);
+}
+
+.botones-nuevos-container button:active {
+    background-color: #e2e6ea;
+}
+
+/* Botones específicos */
+.boton-certificacion {
+    background-color: #28a745;
+    color: white;
+}
+
+.boton-certificacion:hover {
+    background-color: #218838;
+}
+
+.boton-sello-verde {
+    background-color: #007bff;
+    color: white;
+}
+
+.boton-sello-verde:hover {
+    background-color: #0056b3;
+}
