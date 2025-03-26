@@ -252,6 +252,46 @@ footer {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+
+/* Estilo para las redes sociales */
+.social-links {
+    display: flex;
+    justify-content: center; /* Centra los botones */
+    gap: 20px; /* Espaciado entre los botones */
+    margin-top: 30px;
+}
+
+/* Ajustes para los íconos de las redes sociales */
+.social-links a {
+    display: inline-block;
+    width: 40px;  /* Ancho de los íconos */
+    height: 40px; /* Alto de los íconos */
+    object-fit: contain;
+    transition: transform 0.3s ease;
+}
+
+/* Efecto al pasar el mouse sobre los íconos de redes sociales */
+.social-links a:hover {
+    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+}
+
+/* Ajustes para dispositivos móviles */
+@media (max-width: 600px) {
+    /* Ajusta los íconos para pantallas pequeñas */
+    .social-links {
+        flex-direction: row; /* Mantiene los botones en una fila */
+        justify-content: center; /* Los centra */
+    }
+
+    .social-links a {
+        width: 35px; /* Ajusta el tamaño de los íconos en móvil */
+        height: 35px;
+    }
+}
+
+
+
+
 footer p {
     color: white;
 }
@@ -273,3 +313,4 @@ footer p {
         flex-direction: column;
     }
 }
+
