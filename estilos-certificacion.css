@@ -1,0 +1,116 @@
+/* Estilos generales */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('imagenes/renovacion-de-sello-verde-de-gas.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+}
+
+/* Contenedor principal */
+header {
+    background: rgba(0, 0, 0, 0.7);
+    padding: 20px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 28px;
+    margin: 0;
+}
+
+/* Logo */
+.logo {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 80px;
+}
+
+/* Secciones */
+section {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 800px;
+    border-radius: 10px;
+}
+
+/* Títulos */
+h2 {
+    color: #f2a900;
+    border-bottom: 2px solid #f2a900;
+    padding-bottom: 5px;
+    margin-bottom: 15px;
+}
+
+/* Botón de regreso */
+.btn-regresar {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    background: #f2a900;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: #000;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn-regresar:hover {
+    background: #d48f00;
+}
+
+/* Botón principal */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #f2a900;
+    color: black;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #d48f00;
+}
+
+/* Estilos para listas */
+ul, ol {
+    margin-left: 20px;
+}
+
+ul li, ol li {
+    margin-bottom: 8px;
+}
+
+/* Sección de testimonios */
+.testimonio {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 15px;
+    border-left: 5px solid #f2a900;
+    margin-bottom: 15px;
+}
+
+/* Preguntas frecuentes */
+details {
+    background: rgba(255, 255, 255, 0.2);
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+summary {
+    font-weight: bold;
+    cursor: pointer;
+    color: #f2a900;
+}
+
+summary:hover {
+    text-decoration: underline;
+}
