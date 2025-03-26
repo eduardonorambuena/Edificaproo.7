@@ -117,6 +117,18 @@ header h1 {
     background-color: #218838; /* Tono verde más oscuro al pasar el mouse */
 }
 
+/* Estilos nuevos para los botones de "Certificación de Gas" y "Sello Verde" */
+.boton-certificacion-gas,
+.boton-sello-verde {
+    background-color: #007bff; /* Fondo azul para los nuevos botones */
+    color: white; /* Texto blanco */
+}
+
+.boton-certificacion-gas:hover,
+.boton-sello-verde:hover {
+    background-color: #0056b3; /* Azul más oscuro al pasar el mouse */
+}
+
 /* Estilo para el contenido principal */
 main {
     padding: 20px;

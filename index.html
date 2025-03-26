@@ -1,86 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Edificapro7 - Página de Inicio</title>
+    <title>Edificapro7</title>
     <link rel="stylesheet" href="style.css">
-    
-    <script>
-        function toggleMenu() {
-            const sidebar = document.getElementById('sidebar');
-            const menuIcon = document.querySelector('.menu-icon');
-            sidebar.style.display = sidebar.style.display === 'block' ? 'none' : 'block';
-            menuIcon.innerHTML = sidebar.style.display === 'block' ? '✖' : '☰'; // Cambiar entre ☰ y ✖
-        }
-    </script>
 </head>
+
 <body>
+
+    <!-- Encabezado -->
     <header>
-        <img src="imagenes/logo.png.png" alt="Logo CertiGas" class="logo">
+        <img src="imagenes/logo.png" alt="Logo" class="logo">
         <h1>Edificapro7</h1>
-        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu-icon">
+            <!-- Aquí iría el ícono del menú si lo necesitas -->
+            <img src="imagenes/menu-icon.png" alt="Menú">
+        </div>
     </header>
 
-    <!-- Barra lateral para menú móvil -->
-    <div id="sidebar" class="sidebar">
-        <button onclick="window.location.href='index.html';">Inicio</button>
-        <button onclick="window.location.href='contacto.html';">Contacto</button>
-        <button onclick="window.location.href='ubicacion.html';">Ubicación</button>
-        <button onclick="window.location.href='calculadora.html';">Ir a la Calculadora</button>
+    <!-- Contenedor de botones -->
+    <div class="botones-container">
+        <!-- Botón para calculadora -->
+        <button class="boton-calculadora">
+            Calculadora
+        </button>
+
+        <!-- Botón para servicios -->
+        <button class="boton-servicios">
+            Servicios
+        </button>
+
+        <!-- Botón para contacto -->
+        <button class="boton-contacto">
+            Contacto
+        </button>
     </div>
 
-    <nav class="botones-container">
-        <button onclick="window.location.href='contacto.html';">Contacto</button>
-        <button onclick="window.location.href='ubicacion.html';">Ubicación</button>
-        <button onclick="window.location.href='calculadora.html';" class="boton-calculadora">Ir a la Calculadora</button>
-    </nav>
-    
-    <!-- Nuevos botones de Certificación de Gas y Sello Verde -->
-    <nav class="botones-container-bajo">
-        <button onclick="window.location.href='certificacion-gas.html';">Certificación de Gas</button>
-        <button onclick="window.location.href='sello-verde.html';">Sello Verde</button>
-    </nav>
-    
+    <!-- Sección de servicios -->
     <main>
         <section id="servicios">
-            <h2>Nuestros Servicios</h2>
-            <div class="servicio" style="background-image: url('imagenes/images.jpeg');">
-                <h3>Certificación de Gas Clase 2</h3>
-                <p>Ofrecemos certificación de instalaciones de gas clase 2 con sello verde, garantizando el cumplimiento de las normativas vigentes establecidas por la SEC. Nuestro equipo de expertos realiza inspecciones exhaustivas y entrega documentación oficial respaldada.</p>
+            <h2>Servicios</h2>
+            <div class="servicio" style="background-image: url('imagenes/servicio1.jpg');">
+                <h3>Servicio 1</h3>
+                <p>Descripción del servicio 1.</p>
             </div>
-            <div class="servicio" style="background-image: url('imagenes/renovacion-de-sello-verde-de-gas.jpg');">
-                <h3>Asesoría Técnica en Instalaciones de Gas</h3>
-                <p>Brindamos asistencia técnica para instalaciones nuevas y existentes, asegurando seguridad y eficiencia en cada proyecto.</p>
+            <div class="servicio" style="background-image: url('imagenes/servicio2.jpg');">
+                <h3>Servicio 2</h3>
+                <p>Descripción del servicio 2.</p>
+            </div>
+            <div class="servicio" style="background-image: url('imagenes/servicio3.jpg');">
+                <h3>Servicio 3</h3>
+                <p>Descripción del servicio 3.</p>
             </div>
         </section>
 
+        <!-- Sección ¿Quiénes somos? -->
         <section id="quienes-somos">
             <h2>¿Quiénes somos?</h2>
-            <p>Somos una empresa especializada en certificaciones de gas clase 2, respaldada por la SEC y comprometida con la seguridad y calidad en cada proyecto. Contamos con un equipo profesional y capacitado para garantizar el cumplimiento de las normativas vigentes.</p>
+            <p>Somos una empresa familiar dedicada al rubro de la construcción y asesorías técnicas.</p>
         </section>
     </main>
 
+    <!-- Pie de página -->
     <footer>
-        <p>&copy; 2025 CertiGas. Todos los derechos reservados.</p>
-        <h2>Conéctate con Nosotros</h2>
+        <p>&copy; 2025 Edificapro7. Todos los derechos reservados.</p>
         <div class="social-links">
-            <a href="https://www.instagram.com/edificapro7/profilecard/?igsh=Z2k0bmx4azAwd285" target="_blank" aria-label="Instagram"><img src="imagenes/instagram (3).png" alt="Ícono de Instagram"></a>
-            <a href="https://wa.me/+56932193835" target="_blank" aria-label="WhatsApp"><img src="imagenes/logo.whatsap (3).png" alt="Ícono de WhatsApp"></a>
+            <a href="https://facebook.com" target="_blank">
+                <img src="imagenes/facebook-icon.png" alt="Facebook">
+            </a>
+            <a href="https://twitter.com" target="_blank">
+                <img src="imagenes/twitter-icon.png" alt="Twitter">
+            </a>
+            <a href="https://linkedin.com" target="_blank">
+                <img src="imagenes/linkedin-icon.png" alt="LinkedIn">
+            </a>
         </div>
     </footer>
 
-    <!-- Código de Tawk.to -->
-    <script type="text/javascript">
-        var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-        (function(){
-            var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-            s1.async=true;
-            s1.src='https://embed.tawk.to/6712ea9c2480f5b4f58fc14c/1iagu8tff';
-            s1.charset='UTF-8';
-            s1.setAttribute('crossorigin','*');
-            s0.parentNode.insertBefore(s1,s0);
-        })();
-    </script>
 </body>
+
 </html>
