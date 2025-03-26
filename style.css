@@ -215,6 +215,7 @@ footer {
     position: relative;
     bottom: 0;
     width: 100%;
+    font-size: 15px;
 }
 
 footer p {
@@ -225,7 +226,8 @@ footer p {
 /* Estilo para las redes sociales */
 .social-links a {
     display: inline-block;
-    margin: 10px;
+    margin: 15px;
+    
 }
 
 .social-links img {
@@ -233,6 +235,7 @@ footer p {
     height: 40px;
     object-fit: contain;
     transition: transform 0.3s ease;
+    
 }
 
 /* Efecto al pasar el mouse sobre los íconos */
