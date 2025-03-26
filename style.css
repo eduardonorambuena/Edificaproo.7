@@ -311,12 +311,12 @@ footer p {
 }
 
 /* Botones específicos */
-.boton-certificacion {
+.certificacion-gas {
     background-color: #28a745;
     color: white;
 }
 
-.boton-certificacion:hover {
+.certificacion-gas:hover {
     background-color: #218838;
 }
 
