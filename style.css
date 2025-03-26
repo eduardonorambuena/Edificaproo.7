@@ -78,7 +78,7 @@ header h1 {
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-/* Estilo para el contenedor de los botones principales (Contacto, Ubicación, Calculadora) */
+/* Estilo para el contenedor de los botones */
 .botones-container {
     background-color: #6c757d; /* Fondo color plomo */
     padding: 20px;  /* Relleno para separar los botones del borde */
@@ -87,7 +87,6 @@ header h1 {
     justify-content: center;
     gap: 15px;  /* Espaciado entre los botones */
     margin-top: 30px;  /* Espaciado desde la parte superior */
-    flex-wrap: wrap;  /* Permite el salto de línea en pantallas más pequeñas */
 }
 
 /* Estilo para cada botón dentro del contenedor */
@@ -102,7 +101,6 @@ header h1 {
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.3s ease;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    flex: 1 1 auto;  /* Asegura que los botones ocupen el mismo espacio */
 }
 
 /* Efecto al pasar el mouse sobre los botones */
@@ -116,40 +114,15 @@ header h1 {
     background-color: #e2e6ea; /* Fondo gris claro al hacer clic */
 }
 
-/* Contenedor para los botones de certificación de gas y sello verde */
-.botones-certificacion {
-    background-color: #6c757d; /* Fondo color plomo */
-    padding: 20px;  /* Relleno para separar los botones del borde */
-    border-radius: 10px; /* Bordes redondeados */
-    display: flex;
-    justify-content: center;
-    gap: 15px;  /* Espaciado entre los botones */
-    margin-top: 30px;  /* Espaciado desde la parte superior */
-    flex-wrap: wrap;  /* Permite el salto de línea en pantallas más pequeñas */
-}
-
-/* Estilo para los botones de certificación de gas y sello verde */
-.botones-certificacion button {
-    background-color: #28a745; /* Fondo verde para los botones de certificación */
+/* Estilo específico para el botón de la calculadora */
+.boton-calculadora {
+    background-color: #28a745; /* Fondo verde para el botón de la calculadora */
     color: white; /* Texto blanco */
-    padding: 12px 25px;
-    font-size: 18px;
-    font-weight: bold;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Efecto al pasar el mouse sobre los botones de certificación */
-.botones-certificacion button:hover {
+/* Efecto al pasar el mouse sobre el botón de la calculadora */
+.boton-calculadora:hover {
     background-color: #218838; /* Tono verde más oscuro al pasar el mouse */
-}
-
-/* Efecto al hacer clic en los botones de certificación */
-.botones-certificacion button:active {
-    background-color: #1c7430; /* Fondo verde más oscuro al hacer clic */
 }
 
 /* Estilo para el contenido principal */
@@ -245,72 +218,55 @@ footer {
     background-position: center;
     background-repeat: no-repeat;
     color: rgb(0, 0, 0);
-    padding: 30px;
     text-align: center;
-    font-size: 18px;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    padding: 10px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    font-size: 15px;
 }
 
+footer p {
+    margin: 0;
+    color: rgb(2, 2, 2);
+}
 
 /* Estilo para las redes sociales */
-.social-links {
-    display: flex;
-    justify-content: center; /* Centra los botones */
-    gap: 20px; /* Espaciado entre los botones */
-    margin-top: 30px;
-}
-
-/* Ajustes para los íconos de las redes sociales */
 .social-links a {
     display: inline-block;
-    width: 40px;  /* Ancho de los íconos */
-    height: 40px; /* Alto de los íconos */
+    margin: 15px;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
     object-fit: contain;
     transition: transform 0.3s ease;
 }
 
-/* Efecto al pasar el mouse sobre los íconos de redes sociales */
-.social-links a:hover {
-    transform: scale(1.1); /* Efecto de zoom al pasar el mouse */
+/* Efecto al pasar el mouse sobre los íconos */
+.social-links img:hover {
+    transform: scale(1.1);
 }
 
 /* Ajustes para dispositivos móviles */
 @media (max-width: 600px) {
-    /* Ajusta los íconos para pantallas pequeñas */
-    .social-links {
-        flex-direction: row; /* Mantiene los botones en una fila */
-        justify-content: center; /* Los centra */
+    .logo {
+        width: 40px;
     }
 
-    .social-links a {
-        width: 35px; /* Ajusta el tamaño de los íconos en móvil */
-        height: 35px;
+    nav button {
+        padding: 8px 12px;
+        font-size: 14px;
     }
-}
 
+    .servicio {
+        flex: 1 1 calc(100% - 20px);
+    }
 
-
-
-footer p {
-    color: white;
-}
-
-/* Ajustes para dispositivos móviles */
-@media (max-width: 600px) {
-    .botones-container button,
-    .botones-certificacion button {
+    /* Ajustar los botones para pantallas pequeñas */
+    .botones-container button {
         padding: 10px 20px;
         font-size: 16px;
     }
-    
-    .servicio {
-        flex: 1 1 calc(100% - 20px);
-        height: auto;
-    }
-
-    #servicios {
-        flex-direction: column;
-    }
 }
-
